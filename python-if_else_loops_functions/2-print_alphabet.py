@@ -1,4 +1,3 @@
 #!/usr/bin/python3
-import string
-for letter in string.ascii_lowercase:
-    print(letter.format(string.ascii_lowercase), end="")
+for i in range(97, 123):
+    print("{0}".format(chr(i)), end='') #  print ASCII chr number 97-123
