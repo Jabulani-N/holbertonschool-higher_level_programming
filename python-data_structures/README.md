@@ -18,3 +18,6 @@ x = "look at my beautiful {y}"
 
 print ("x says" + x.format(y="content"))
 ```
+## Task1 Secure access to an element in a list
+
+when the assignment says "return None", it means `return "None"`.
