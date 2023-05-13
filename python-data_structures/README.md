@@ -14,10 +14,7 @@ it does **not** want the approach below.
 
 
 ```
-{
-
 x = "look at my beautiful {y}"
 
 print ("x says" + x.format(y="content"))
-}
 ```
