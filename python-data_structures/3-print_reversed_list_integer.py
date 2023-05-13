@@ -4,7 +4,7 @@ def print_reversed_list_integer(my_list=[]):
     # type(me) returns the type of me
     # isinstance(me, extype) returns true if type of me is extype
     if isinstance(my_list, list) is False:  # list by itself returns []
-        return None  # example array makes code prtable regardless of pyversion
+        return None
     for index in reversed(my_list):  # reversed works on any sequence
         # creates variable "index" to loop through reverse of "my_list"
         print("{:d}".format(index))
