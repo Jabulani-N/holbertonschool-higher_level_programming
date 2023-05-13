@@ -9,4 +9,3 @@ def new_in_list(my_list, idx, element):
     else:
         dupe_list[idx] = element
         return dupe_list
-    
