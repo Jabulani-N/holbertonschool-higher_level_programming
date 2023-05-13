@@ -21,3 +21,7 @@ print ("x says" + x.format(y="content"))
 ## Task1 Secure access to an element in a list
 
 `return None` is utilized.
+
+## Task3
+
+`reversed(itemName)` will return the same data structure as itemName, but with contents of itemName, reversed
