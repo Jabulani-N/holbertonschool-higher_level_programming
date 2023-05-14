@@ -12,3 +12,5 @@ def print_matrix_integer(matrix=[[]]):
                 pos += 1
     else:
         print()
+    if pos == 0:  # if the input matrix was empty
+        print()
