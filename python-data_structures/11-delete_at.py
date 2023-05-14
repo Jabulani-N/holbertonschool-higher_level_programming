@@ -12,5 +12,5 @@ def delete_at(my_list=[], idx=0):
         if pos != idx:
             noob.append(content)
         pos += 1
-    my_list = noob
+    my_list = noob.copy()
     return (noob)
