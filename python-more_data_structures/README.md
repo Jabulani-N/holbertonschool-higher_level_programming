@@ -16,6 +16,13 @@ just reuse the code from removing the letter 'c' from before.
 
 it uses the "translate" function
 
+translate requires a string, and we are given int.
+
+- easiest thing is to just check if each on matches the search and if so append replace.
+
+- - alternative (way more code) is to convert current item to string, and translate *that* into the stirng for replace, and then convert the newly created value back into int.
+
+- "if equal" approach also prevents issues where searching for 2 replaces 22 with "replacereplace"
 ## Task2 - Unique addition
 
 reuse code form the "find maximum" from last project. instead of storing max, *append* the  *current integer* to an array of *used_values*.`used_values.append(curent_integer)`
