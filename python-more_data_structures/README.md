@@ -64,3 +64,12 @@ this is relevant for `isinstance()` as they return different results for `type()
 ## Task6 - Print sorted dictionary
 
 `sorted(dictname)` sorts dictname alphabetically
+
+## Task 7 - Update
+
+`setname.update(othersetname)` adds contents of othersetname to setname.
+
+- also works on dicts.
+
+- - when used on dicts, it replaces any already present definitions in setname with waht othersetname says.
+
