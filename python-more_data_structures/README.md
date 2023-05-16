@@ -39,8 +39,15 @@ if currernt value is not in `repeat` `total += current_value`
 
 ## Task3 - Present in both
 
+
 ~~for item1 in first_array, for item2 in second_array, if item1 == item2, it is in both.~~
 
 they're sets, not lists. different operations will be used.
 
 just do the [set comprhension](https://docs.python.org/3/tutorial/datastructures.html#sets). Reading the instructions is life-changing.
+
+### potential pitfall: set
+
+empty sets are created via `set(setname)`
+
+empty dictionaries are created via `dictname = {}`
