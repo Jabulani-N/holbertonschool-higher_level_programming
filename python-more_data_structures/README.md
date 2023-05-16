@@ -1,5 +1,12 @@
 # Python - More Data Structures: Set, Dictionary
 
+`type([])` == list
+
+`type({})` == dict [dictionary]
+
+`type(set())` == set
+
+
 ## Task0 - Squared simple
 
 You can't use `copylist = examplelist.copy()` because it's a shallow copy
@@ -51,3 +58,5 @@ just do the [set comprhension](https://docs.python.org/3/tutorial/datastructures
 empty sets are created via `set(setname)`
 
 empty dictionaries are created via `dictname = {}`
+
+this is relevant for `isinstance()` as they return different results for `type()`
