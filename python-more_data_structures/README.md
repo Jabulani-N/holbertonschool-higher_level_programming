@@ -63,7 +63,7 @@ this is relevant for `isinstance()` as they return different results for `type()
 
 ## Task6 - Print sorted dictionary
 
-`sorted(dictname)` sorts dictname alphabetically
+`sorted(dictname)` sorts dictname's keys alphabetically
 
 ## Task 7 - Update
 
