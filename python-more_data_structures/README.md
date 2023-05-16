@@ -69,9 +69,16 @@ this is relevant for `isinstance()` as they return different results for `type()
 
 ## Task 7 - Update
 
+### This task will not pass the holberton checker unless your Task6 in the same repository does as well.
+
 `setname.update(othersetname)` adds contents of othersetname to setname.
 
 - also works on dicts.
 
 - - when used on dicts, it replaces any already present definitions in setname with waht othersetname says.
 
+## Task 8 - Simple Delete
+
+### This task will not pass the holberton checker unless your Task6 in the same repository does as well.
+
+`dictname.pop(key, returnsThisIfKeyNotFound)`
