@@ -25,8 +25,12 @@ translate requires a string, and we are given int.
 - "if equal" approach also prevents issues where searching for 2 replaces 22 with "replacereplace"
 ## Task2 - Unique addition
 
-reuse code form the "find maximum" from last project. instead of storing max, *append* the  *current integer* to an array of *used_values*.`used_values.append(curent_integer)`
+*append* the  *current integer* to an array of *used_values*.`used_values.append(curent_integer)`
 
-then, in the for loop taht iterates through the given list, do another for loop to iteraete through `used_values`, and if anything matches,turn variable `repeat` from False to True.
+then loop through again
 
-if, after that fro loop, `repeat` is False, then add it to `total`
+if current value is in `used_values`,  then `repeat.append(current_value)`
+
+loop once more
+
+if currernt value is not in `repeat` `total += current_value`
