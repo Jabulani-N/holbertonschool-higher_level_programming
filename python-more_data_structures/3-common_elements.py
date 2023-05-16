@@ -2,14 +2,9 @@
 
 
 def common_elements(set_1, set_2):
-    if isinstance(set_1, list) is False or isinstance(set_2, list) is False:
+    if isinstance(set_1, dict) is False or isinstance(set_2, dict) is False:
         return None
-    if set_1 == [] or set_2 == []:
-        return []
+    if set_1 == {} or set_2 == {}:
+        return {}
 
-    commoners = []
-    for item1 in set_1:
-        for item2 in set_2:
-            if item1 == item2:
-                commoners.append(item1)
-    return commoners
+return {for item in set_1 if item in set_2}
