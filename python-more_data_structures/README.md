@@ -34,3 +34,5 @@ if current value is in `used_values`,  then `repeat.append(current_value)`
 loop once more
 
 if currernt value is not in `repeat` `total += current_value`
+
+turns out it means it just wants to add every single value, but only add each value once
