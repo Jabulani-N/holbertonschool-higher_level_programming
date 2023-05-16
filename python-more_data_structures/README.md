@@ -60,3 +60,7 @@ empty sets are created via `set(setname)`
 empty dictionaries are created via `dictname = {}`
 
 this is relevant for `isinstance()` as they return different results for `type()`
+
+## Task6 - Print sorted dictionary
+
+`sorted(dictname)` sorts dictname alphabetically
