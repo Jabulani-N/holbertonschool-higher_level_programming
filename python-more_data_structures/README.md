@@ -37,3 +37,6 @@ loop once more
 
 if currernt value is not in `repeat` `total += current_value`
 
+## Task3 - Present in both
+
+for item1 in first_array, for item2 in second_array, if item1 == item2, it is in both.
