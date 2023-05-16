@@ -3,7 +3,7 @@
 
 def uniq_add(my_list=[]):
     if my_list == [] or isinstance(my_list, list) is False:
-        return None
+        return 0
     used = []
     twice = []
     total = 0
@@ -13,7 +13,7 @@ def uniq_add(my_list=[]):
             if listitem == useditem:
                 twice.append(listitem)
                 repeat = True
-        if repeat == False:
+        if repeat is False:
             used.append(listitem)
         repeat = False
 # we now have a list of used values and repeat values

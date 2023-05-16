@@ -25,6 +25,8 @@ translate requires a string, and we are given int.
 - "if equal" approach also prevents issues where searching for 2 replaces 22 with "replacereplace"
 ## Task2 - Unique addition
 
+turns out it means it just wants to add every single value, but only add each value once, so the approach below goes too far.
+
 *append* the  *current integer* to an array of *used_values*.`used_values.append(curent_integer)`
 
 then loop through again
@@ -35,4 +37,3 @@ loop once more
 
 if currernt value is not in `repeat` `total += current_value`
 
-turns out it means it just wants to add every single value, but only add each value once
