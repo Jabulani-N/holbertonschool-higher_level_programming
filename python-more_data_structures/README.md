@@ -82,3 +82,9 @@ this is relevant for `isinstance()` as they return different results for `type()
 ### This task will not pass the holberton checker unless your Task6 in the same repository does as well.
 
 `dictname.pop(key, returnsThisIfKeyNotFound)`
+
+## Task 10 -
+
+uses `max(dictname.valeus())`, which returns the highest value within dictname.
+
+- you'll have to find which dictname[keyname] == the returned value.
