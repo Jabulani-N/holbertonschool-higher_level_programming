@@ -2,9 +2,9 @@
 
 
 def best_score(a_dictionary):
-    bestgirl = None
+    bestgirl = 'None'
     if isinstance(a_dictionary, dict):
-        charmpoints = max(a_dictionary.values)
+        charmpoints = max(a_dictionary.values())
         for key in a_dictionary:
             if a_dictionary[key] == charmpoints:
                 bestgirl = key
