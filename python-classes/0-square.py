@@ -2,7 +2,7 @@
 
 
 class square:
-    """Object-class summary documentation
+    """'Object-class summary documentation
     sttributes will be documented in the below section
     indent them like anything else protected by a colon.
     Attributes:
