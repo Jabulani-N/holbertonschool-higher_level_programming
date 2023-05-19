@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""module documentation
-
-this module, 0-square.py, creates a class: square.
+""" creates class Square.
 
 """
 
@@ -14,17 +12,18 @@ class Square:
     indent them like anything else protected by a colon.
 
     Attributes:
-
+        size: private via leading underscores. defaults to 0
     """
+    __size = 0
 
-    pass
 
-    def __init__(self):
+    def __init__(self, size):
         """__init__ method documentation
 
         __init__ can optionally instead be documented in the class section
         do not include 'self' as an arg
 
-        'Args:' would go here
+        Args:
+            size: size of square instanciated
         """
-        pass
+        self.size = size
