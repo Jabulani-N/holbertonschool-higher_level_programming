@@ -43,3 +43,9 @@ demonstrates getter and setter methods:
         #does something
 
 ```
+
+# Task 6
+
+a tuple is an ordered and unchangeable list of items.
+
+`example_tuple = ("apple", "bannana", "cuccumber")`
