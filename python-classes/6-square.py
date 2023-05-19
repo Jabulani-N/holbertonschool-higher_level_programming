@@ -16,11 +16,8 @@ class Square:
         position: number of spaces to put befroe printing
     """
 
-    def __init__(self, size=0):
-        """__init__ method documentation
-
-        __init__ can optionally instead be documented in the class section
-        do not include 'self' as an arg
+    def __init__(self, size=0, position=(0, 0)):
+        """creates a Square
 
         Args:
             size: made optional via "=0" defualt value.
@@ -31,6 +28,11 @@ class Square:
         if size < 0:
             raise ValueError("size must be >= 0")
         self.__size = size
+
+        if isinstance(position, tuple) is False or position[0] < 0 or position[1] < 0:
+            raise TypeError("position must be a tuple of 2 positive integers")
+        if isinstance(position[0, int]) is False or isinstance(position[1, int]):
+            raise TypeError("position must be a tuple of 2 positive integers")
 
     def area(self):
         """squares self.__size without importing math
@@ -64,8 +66,13 @@ class Square:
 
     @property
     def position(self):
-        return self__position
-    
+        return self.__struckpose
+
     @position.setter
     def position(self, value):
-        
+        if isinstance(value, tuple) is False or value[0] < 0 or value[1] < 0:
+            raise TypeError("position must be a tuple of 2 positive integers")
+        if isinstance(value[0, int]) is False or isinstance(value[1, int]):
+            raise TypeError("position must be a tuple of 2 positive integers")
+        self.__struckpose = value
+
