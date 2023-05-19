@@ -5,6 +5,7 @@ this module, 0-square.py, crates a class: square.
 
 """
 
+
 class Square:
     """Object-class summary documentation.
 
@@ -13,9 +14,11 @@ class Square:
     indent them like anything else protected by a colon.
 
     Attributes:
-    
+
     """
+
     pass
+
     def __init__(self):
         """__init__ method documentation
 
