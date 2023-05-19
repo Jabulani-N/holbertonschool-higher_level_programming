@@ -14,7 +14,6 @@ class Square:
     Attributes:
         size: private via leading underscores. defaults to 0
     """
-    __size = 0
 
 
     def __init__(self, size):
@@ -26,4 +25,4 @@ class Square:
         Args:
             size: size of square instanciated
         """
-        self.size = size
+        self.__size = size
