@@ -29,9 +29,11 @@ class Square:
             raise ValueError("size must be >= 0")
         self.__size = size
 
-        if isinstance(position, tuple) is False or position[0] < 0 or position[1] < 0:
+        if isinstance(position, tuple) is False or position[0] < 0 or \
+           position[1] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
-        if isinstance(position[0, int]) is False or isinstance(position[1, int]):
+        if isinstance(position[0, int]) is False or \
+           isinstance(position[1, int]):
             raise TypeError("position must be a tuple of 2 positive integers")
 
     def area(self):
@@ -52,7 +54,6 @@ class Square:
         if value < 0:
             raise ValueError("size must be >= 0")
         self.__size = value
-
 
     def my_print(self):
         """prints a square of #s based on self.__size"""
@@ -79,4 +80,3 @@ class Square:
         if isinstance(value[0, int]) is False or isinstance(value[1, int]):
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__struckpose = value
-
