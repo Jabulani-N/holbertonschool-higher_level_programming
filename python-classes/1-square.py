@@ -15,7 +15,6 @@ class Square:
         size: private via leading underscores. defaults to 0
     """
 
-
     def __init__(self, size):
         """__init__ method documentation
 
