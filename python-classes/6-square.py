@@ -35,6 +35,7 @@ class Square:
         if isinstance(position[0], int) is False or \
            isinstance(position[1], int) is False:
             raise TypeError("position must be a tuple of 2 positive integers")
+        self.__struckpose = position
 
     def area(self):
         """squares self.__size without importing math
@@ -58,12 +59,12 @@ class Square:
     def my_print(self):
         """prints a square of #s based on self.__size"""
         if self.__size == 0:
-            for indentation in range(self.__struckpose):
+            for indentation in range(self.__struckpose[0]):
                 print(" ", end='')
             print("")
         else:
             for row in range(self.__size):
-                for indentation in range(self.__struckpose):
+                for indentation in range(self.__struckpose[0]):
                     print(" ", end='')
                 for column in range(self.__size):
                     print("#", end='')
