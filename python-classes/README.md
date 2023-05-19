@@ -16,4 +16,11 @@ you will have failed to document "Classname" if you instead docuemnted "classnam
 
 ## Task 2
 
-see python-exceptions directory for information on raising errors
+demonstrates intentionally raising errors
+
+see python-exceptions directory for more examples of raising errors
+
+
+## Task 4
+
+demonstrates creating a method (funciton) within a class
