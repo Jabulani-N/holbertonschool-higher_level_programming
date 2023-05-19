@@ -66,8 +66,6 @@ class Square:
         for heading in range(self.__struckpose[1]):
             print()
         if self.__size == 0:
-            for indentation in range(self.__struckpose[0]):
-                print(" ", end='')
             print("")
         else:
             for row in range(self.__size):
