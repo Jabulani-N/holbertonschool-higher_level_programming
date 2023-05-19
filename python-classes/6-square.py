@@ -33,7 +33,8 @@ class Square:
            isinstance(position[0], int) is False or \
            isinstance(position[1], int) is False:
             raise TypeError("position must be a tuple of 2 positive integers")
-        if position[0] < 0 or position[1] < 0:
+        if position[0] < 0 or position[1] < 0 or \
+           value[0] == None or value[1] == None:
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__struckpose = position
 
@@ -85,7 +86,8 @@ class Square:
            isinstance(value[0], int) is False or \
            isinstance(value[1], int) is False:
             raise TypeError("position must be a tuple of 2 positive integers")
-        if value[0] < 0 or value[1] < 0:
+        if value[0] < 0 or value[1] < 0 or \
+            value[0] == None or value[1] == None:
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__struckpose = value
         self.__struckpose = value
