@@ -24,3 +24,22 @@ see python-exceptions directory for more examples of raising errors
 ## Task 4
 
 demonstrates creating a method (funciton) within a class
+
+demonstrates getter and setter methods:
+
+
+```
+
+    @property
+
+    methodname(self):
+
+        return self.something
+
+    @methodname.setter
+
+    methodname(self, some_input)
+
+        #does something
+
+```
