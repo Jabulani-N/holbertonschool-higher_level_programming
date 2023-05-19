@@ -57,7 +57,12 @@ class Square:
         self.__size = value
 
     def my_print(self):
-        """prints a square of #s based on self.__size"""
+        """prints a square of #s based on self.__size
+
+        considers position
+        """
+        for heading in range(self.__struckpose[1]):
+            print()
         if self.__size == 0:
             for indentation in range(self.__struckpose[0]):
                 print(" ", end='')
