@@ -52,4 +52,4 @@ a tuple is an ordered (the order will not change) and unchangeable list of items
 
 if the size is 0, only prirnt the single blank line.
 
-the formati of hte position is (number of blank lines above square, number of spaces before the square  starts)
+the format of the position parameter is (number of blank lines above square, number of spaces before the square  starts)
