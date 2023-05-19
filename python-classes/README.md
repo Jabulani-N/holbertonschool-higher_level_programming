@@ -49,3 +49,7 @@ demonstrates getter and setter methods:
 a tuple is an ordered (the order will not change) and unchangeable list of items.
 
 `example_tuple = ("apple", "bannana", "cuccumber")`
+
+if the size is 0, only prirnt the single blank line.
+
+the formati of hte position is (number of blank lines above square, number of spaces before the square  starts)
