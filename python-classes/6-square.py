@@ -63,11 +63,12 @@ class Square:
 
         considers position
         """
-        for heading in range(self.__struckpose[1]):
-            print()
+
         if self.__size == 0:
             print("")
         else:
+            for heading in range(self.__struckpose[1]):
+                print()
             for row in range(self.__size):
                 for indentation in range(self.__struckpose[0]):
                     print(" ", end='')
