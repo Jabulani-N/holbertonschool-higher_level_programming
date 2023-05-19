@@ -36,13 +36,20 @@ class Square:
         """
         return self.__size * self.__size
 
+    @property
+    def size(self):
+        """getter: returns size of an existing Square"""
+        return self.__size
+
+    @size.setter
     def size(self, value):
-        """alters size of an existing Square"""
+        """setter: alters size of an existing Square"""
         if isinstance(value, int) is False:
             raise TypeError("size must be an integer")
         if value < 0:
             raise ValueError("size must be >= 0")
         self.__size = value
+
 
     def my_print(self):
         """prints a square of #s based on self.__size"""
