@@ -46,6 +46,6 @@ demonstrates getter and setter methods:
 
 # Task 6
 
-a tuple is an ordered and unchangeable list of items.
+a tuple is an ordered (the order will not change) and unchangeable list of items.
 
 `example_tuple = ("apple", "bannana", "cuccumber")`

@@ -61,3 +61,11 @@ class Square:
                 for column in range(self.__size):
                     print("#", end='')
                 print("")
+
+    @property
+    def position(self):
+        return self__position
+    
+    @position.setter
+    def position(self, value):
+        
