@@ -46,7 +46,10 @@ class Square:
 
     def my_print(self):
         """prints a square of #s based on self.__size"""
-        for row in range(self.__size):
-            for column in range(self.__size):
-                print("#", end='')
+        if self.__size == 0:
             print("")
+        else:
+            for row in range(self.__size):
+                for column in range(self.__size):
+                    print("#", end='')
+                print("")
