@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""module 0-add_integer
+
+adds the input ints. also accepts integer floats"""
 
 
 def add_integer(a, b=98):
