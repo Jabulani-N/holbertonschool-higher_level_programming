@@ -4,7 +4,7 @@
 adds the input ints. also accepts integer floats"""
 
 
-def add_integer(a, b):
+def add_integer(a, b=98):
     """tests for type to be int or float,
 
     then if they are and are divisible by 1, return their sum
@@ -12,11 +12,12 @@ def add_integer(a, b):
     if they are float, cast to int.
     int(x) == floor of x in iteger format
     """
-
+    if a is None:
+        return
     if isinstance(a, int) is False and \
        isinstance(a, float) is False or \
        a is None:
-        raise TypeError ("a must be an integer")
+        raise TypeError("a must be an integer")
     if isinstance(b, int) is False and \
        isinstance(b, float) is False or \
        b is None:
