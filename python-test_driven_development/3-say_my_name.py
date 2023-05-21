@@ -8,6 +8,11 @@ requires a string input, or an error will be thrown
 
 
 def say_my_name(first_name, last_name=""):
+    """evaluate inputs:
+
+    requires stirng. else error.
+    prints a sentence including the input strings
+    """
     if isinstance(first_name, str) is False:
         raise TypeError("first_name must be a string")
     if isinstance(last_name, str) is False:
