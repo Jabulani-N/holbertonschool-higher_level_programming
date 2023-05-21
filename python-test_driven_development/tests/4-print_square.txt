@@ -1,0 +1,16 @@
+'Test for 4-print_square module, within 4-print_square.py'
+
+'Function to test: print_square(size)'
+
+>>> print_square = __import__('4-print_square').print_square
+
+'positive integer'
+
+>>> print_square(2)
+##
+##
+
+'negaitve integer'
+
+>>> print_square(-2)
+ValueError("size must be >= 0")
