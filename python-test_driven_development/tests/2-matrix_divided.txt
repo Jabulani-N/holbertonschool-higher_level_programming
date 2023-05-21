@@ -1,0 +1,10 @@
+'Test for 2-matrix_divided module, within 2-matrix_divided.py'
+
+'Function to test: matrix_divided(matrix, div)'
+
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+'test for positive integer division'
+
+>>> matrix_divided([[0,1,2,3],[0,11,22,33],[0,111,222,333]], 3)
+5

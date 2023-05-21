@@ -29,10 +29,10 @@
 >>> add_integer(, 3.3)
 TypeError ("a must be an integer")
 
-'test for empty slot 2'
+'test for empty slot 2 (this is allowed due to default)'
 
 >>> add_integer(3.3,)
-TypeError ("b must be an integer")
+101
 
 'test for empty args'
 

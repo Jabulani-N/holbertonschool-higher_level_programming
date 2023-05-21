@@ -20,3 +20,7 @@ def matrix_divided(matrix, div):
                isinstance(item,float) is False:
                 raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
             # all matrix/div instances below this point are valid
+    for checker in matrix:
+        for item in checker:
+            item = item/div
+    return matrix
