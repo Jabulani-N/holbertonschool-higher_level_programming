@@ -27,7 +27,7 @@ def matrix_divided(matrix, div):
             item_copy = []
     for row in matrix:
         for column in row:
-            item_copy.append(format(column/div, f"{2}f"))
+            item_copy.append(round(column/div, 2))
         divided_matrix.append(item_copy)
 
     return divided_matrix
