@@ -8,6 +8,9 @@ def add_integer(a, b=98):
     """tests for type to be int or float,
 
     then if they are and are divisible by 1, return their sum
+
+    if they are float, cast to int.
+    int(x) == floor of x in iteger format
     """
 
     if isinstance(a, int) is False and \
@@ -19,7 +22,7 @@ def add_integer(a, b=98):
        b == None:
         raise TypeError ("b must be an integer")
     if a % 1 != 0:
-        raise TypeError ("a must be an integer")
+        a = int(a)
     if b % 1 != 0:
-        raise TypeError ("a must be an integer")
+        b = int(b)
     return a + b
