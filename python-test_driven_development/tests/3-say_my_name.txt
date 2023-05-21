@@ -1,0 +1,29 @@
+'Test for 3-say_my_name module, within 3-say_my_name.py'
+
+'Function to test: matrix_divided(matrix, div)'
+
+>>> matrix_divided = __import__('3-say_my_name').say_my_name
+
+'test for two string input'
+
+>>>
+
+'first input only'
+
+>>>
+
+'second inmput only'
+
+>>>
+
+'no input'
+
+>>>
+
+'integer input in slot 1'
+
+>>>
+
+'integer input in slot 2, no input in slot 1'
+
+>>>
