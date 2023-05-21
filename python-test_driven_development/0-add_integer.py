@@ -16,13 +16,13 @@ def add_integer(a, b=98):
     if isinstance(a, int) is False and \
        isinstance(a, float) is False or \
        a is None:
-        raise TypeError ("a must be an integer")
+        raise TypeErro ("a must be an integer")
     if isinstance(b, int) is False and \
        isinstance(b, float) is False or \
        b is None:
-        raise TypeError ("b must be an integer")
-    if a % 1 != 0:
+        raise TypeError("b must be an integer")
+    if isinstance(a, float):
         a = int(a)
-    if b % 1 != 0:
+    if isinstance(b, float):
         b = int(b)
     return a + b
