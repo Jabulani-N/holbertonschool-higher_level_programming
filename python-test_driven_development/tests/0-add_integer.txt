@@ -1,0 +1,10 @@
+'Test for 0-add_integer module, within 0-add_integer.py'
+
+'Function to test: add_integer(a, b=98)'
+
+>>> add_integer = __import__('0-add_integer').add_integer
+
+'test for positive integer addition'
+
+>>> add_integer(2, 3)
+5
