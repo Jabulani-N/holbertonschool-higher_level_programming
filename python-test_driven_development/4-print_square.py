@@ -1,4 +1,10 @@
+#!/usr/bin/python3
+"""module that prints a square of hashes
 
+size based on size.
+
+only accepts integers
+"""
 
 def print_square(size):
     """prints a square of #s based on size
