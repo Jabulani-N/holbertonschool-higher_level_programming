@@ -6,6 +6,7 @@ size based on size.
 only accepts integers
 """
 
+
 def print_square(size):
     """prints a square of #s based on size
 
@@ -19,7 +20,7 @@ def print_square(size):
         raise ValueError("size must be >= 0")
 
     if size == 0:
-        return
+        return None
     else:
         for row in range(size):
             for column in range(size):
