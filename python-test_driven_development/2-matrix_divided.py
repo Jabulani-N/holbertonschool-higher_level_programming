@@ -8,6 +8,13 @@ this module divides all elements of a matrix matrix by div
 
 
 def matrix_divided(matrix, div):
+    """ensures input is matrix and divisor
+
+    ensures divisor is not 0
+    divides matrix elements and returns result
+    does not cnahge input matrix itself
+    """
+
     if isinstance(matrix, list) is False:
         raise TypeError("matrix must be a matrix (list of lists) \
                         of integers/floats")
