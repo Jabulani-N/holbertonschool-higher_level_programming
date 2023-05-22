@@ -8,7 +8,7 @@ This Readme both demonstrates the basic structure of testing via python code, an
 
 ## how to use test files:
 
-run
+run in the terminal:
 
 ```
 
@@ -16,7 +16,7 @@ python3 -m doctest -v testFile
 
 ```
 
-optionally followed by ` | tail -4` or ` | tail -2` to only print final results
+optionally followed by ` | tail -4` or ` | tail -2` (on the same line) to only print final results
 
 be sure testFile imports the module you want to test.
 
