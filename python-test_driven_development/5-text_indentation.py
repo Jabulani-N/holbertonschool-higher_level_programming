@@ -14,9 +14,10 @@ def text_indentation(text):
     """
     if isinstance(text, str) is False:
         raise TypeError("text must be a string")
-    holdstring = text
+    hold_string = text
     hold_string.translate({ord('. '): '.\n\n'})
     hold_string.translate({ord('? '): '?\n\n'})
     hold_string.translate({ord(': '): ':\n\n'})
     # translates all except the last one in the document
     # also does not translate line-ending delims
+    print(hold_string)

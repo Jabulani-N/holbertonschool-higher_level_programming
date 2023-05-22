@@ -1,2 +1,7 @@
-# python-hello_world
-holbrton  repo fro higher level programming
+# Higher-level programming:
+
+holbrton  repo for higher level programming
+
+Includes:
+
+- Python
