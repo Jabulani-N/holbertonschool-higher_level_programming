@@ -9,3 +9,17 @@
 >>> text_indentation("I have no delimiters")
 "I have no delimiters"
 
+'test not a string'
+
+>>> text_indentation(654)
+TypeError ("text must be a string")
+
+'test empty input'
+
+'test 2 inputs'
+
+'test input is only delimiters'
+
+'test stirng with one of each delim'
+
+'test with 2 of each delim'

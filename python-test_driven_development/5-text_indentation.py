@@ -11,3 +11,5 @@ def text_indentation(text):
     """translates in a newline after each '. ', so it's '.\n' instead
     same with ? and :
     """
+    if isinstance(text, str) is False:
+        raise TypeError ("text must be a string")
