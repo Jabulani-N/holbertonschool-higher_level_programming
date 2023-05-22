@@ -15,10 +15,12 @@ def text_indentation(text):
     if isinstance(text, str) is False:
         raise TypeError("text must be a string")
     hold_string = text
-    hold_string = hold_string.replace(". ", ".\n\n")
-    hold_string = hold_string.replace("? ", "?\n\n")
-    hold_string = hold_string.replace(": ", ":\n\n")
-    # replaces all except the last character in the document
-    # won't work on last char because it won't have trailing spce
-    # also does not translate line-ending delims
-    print(hold_string)
+    hold_string = hold_string.replace(". ", ".")
+    hold_string = hold_string.replace(".", ".\n\n")
+    # this method makes it capture and replace spaces after delims
+    hold_string = hold_string.replace("? ", "?")
+    hold_string = hold_string.replace("?", "?\n\n")
+    hold_string = hold_string.replace(": ", ":")
+    hold_string = hold_string.replace(":", ":\n\n")
+
+    print(hold_string, end="")
