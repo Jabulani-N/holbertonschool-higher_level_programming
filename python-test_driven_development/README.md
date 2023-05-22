@@ -93,3 +93,15 @@ potential solutions:
 - create a list of lengths of matrix's contents, and ensure each item is the same
 
 tests are not comprehensive
+
+## Task 4
+
+### Known Issues
+
+does not remove masses of spaces or tabs at the beginning of new lines
+
+potential solutions
+
+test file has not been completed.
+
+- outline is present
