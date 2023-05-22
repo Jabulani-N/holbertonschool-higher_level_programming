@@ -125,4 +125,4 @@ class TestStringMethods(unittest.TestCase):
 
 ```
 
-you essentially "assert" that the item you give it returns the expected result.
+you essentially "assert" that the function/method you give it returns the expected result.
