@@ -17,10 +17,13 @@ def text_indentation(text):
     hold_string = text
     hold_string = hold_string.replace(". ", ".")
     hold_string = hold_string.replace(".", ".\n\n")
-    # this method makes it capture and replace spaces after delims
+    # this makes it capture and replace spaces after delims
     hold_string = hold_string.replace("? ", "?")
     hold_string = hold_string.replace("?", "?\n\n")
     hold_string = hold_string.replace(": ", ":")
     hold_string = hold_string.replace(":", ":\n\n")
 
+    hold_string = hold_string.lstrip(' ')
+    # x.lstrip(char) removes leading char from string x
+    # without args, it removes spaces, newline, tab
     print(hold_string, end="")
