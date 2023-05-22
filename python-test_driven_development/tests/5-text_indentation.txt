@@ -1,0 +1,11 @@
+'Test for 5-text_indentation module, within 5-text_indentation.py'
+
+'Function to test: text_indentation(size)'
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+'test no delimiters'
+
+>>> text_indentation("I have no delimiters")
+"I have no delimiters"
+
