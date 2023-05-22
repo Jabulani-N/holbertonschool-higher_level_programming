@@ -24,6 +24,7 @@ def text_indentation(text):
     hold_string = hold_string.replace(":", ":\n\n")
 
     hold_string = hold_string.lstrip(' ')
+    hold_string = hold_string.lstrip('\t')
     # x.lstrip(char) removes leading char from string x
     # without args, it removes spaces, newline, tab
     print(hold_string, end="")
