@@ -105,3 +105,24 @@ potential solutions
 test file has not been completed.
 
 - outline is present
+
+Task 5
+
+### [Example Test](https://docs.python.org/3.4/library/unittest.html#module-unittest)
+
+```
+
+import unittest
+
+class TestStringMethods(unittest.TestCase):
+
+  def test_upper(self):
+      self.assertEqual('foo'.upper(), 'FOO')
+
+  def test_isupper(self):
+      self.assertTrue('FOO'.isupper())
+      self.assertFalse('Foo'.isupper())
+
+```
+
+you essentially "assert" that the item you give it returns the expected result.
