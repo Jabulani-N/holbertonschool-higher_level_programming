@@ -17,7 +17,7 @@ def text_indentation(text):
     hold_string = text
     hold_string = hold_string.replace(". ", ".\n\n")
     hold_string = hold_string.replace("? ", "?\n\n")
-    hold_string = hold_string.replace(": ", ":\n\n"cols)
+    hold_string = hold_string.replace(": ", ":\n\n")
     # replaces all except the last character in the document
     # won't work on last char because it won't have trailing spce
     # also does not translate line-ending delims
