@@ -12,7 +12,7 @@ class testingTask6(unittest.TestCase):
 
 
     def test_empty_list(self):
-        self.assertEqual(max_integer([]), 0)
+        self.assertEqual(max_integer([]), None)
 
 
 
