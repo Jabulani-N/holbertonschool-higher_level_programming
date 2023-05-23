@@ -12,8 +12,6 @@ class Rectangle:
     height - private instance - int >= 0
 
     """
-
-
     def __init__(self, width=0, height=0):
         """__init__ to be called upon creating a Rectangle instance
         sizes are intentionally optional.
