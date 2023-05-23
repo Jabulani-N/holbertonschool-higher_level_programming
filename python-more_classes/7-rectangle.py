@@ -86,7 +86,7 @@ class Rectangle:
             return str_rectangle
         for row in range(self.__height):
             for item in range(self.__width):
-                str_rectangle += f'{type(self).print_symbol}'
+                str_rectangle += f'{self.print_symbol}'
             str_rectangle += "\n"
         str_rectangle = str_rectangle.strip()
         return str_rectangle
