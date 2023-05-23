@@ -38,6 +38,22 @@ accesses own class via instance functions
 
 ### Potential Pitfalls
 
-be sure the rectangle printer pints hte instances own `self.print_symbol` and not the class's.
+be sure the rectangle printer pints the instances own `self.print_symbol` and not the class's.
 
-the class's only exists for the purpose of altering what an instance defaults to
+the class's `self.print_symbol` only exists for the purpose of altering what an instance defaults to.
+
+## Task 9
+
+within
+- ```
+def Example_Class
+
+    @classmethod
+
+        def example_class_method(cls)
+
+            content
+```
+
+replacing "content" with `cls` is equivalent to replacing "contnt" with `Example_Class` \
+allowing you to run the class's __init__ method within the class itself.
