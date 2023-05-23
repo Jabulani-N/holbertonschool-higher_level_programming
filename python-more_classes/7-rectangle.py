@@ -20,6 +20,7 @@ class Rectangle:
 
     """
     number_of_instances = 0
+    print_symbol = "#"
 
     def __init__(self, width=0, height=0):
         """__init__ to be called upon creating a Rectangle instance
@@ -85,7 +86,7 @@ class Rectangle:
             return str_rectangle
         for row in range(self.__height):
             for item in range(self.__width):
-                str_rectangle += "#"
+                str_rectangle += f'{type(self).print_symbol}'
             str_rectangle += "\n"
         str_rectangle = str_rectangle.strip()
         return str_rectangle
