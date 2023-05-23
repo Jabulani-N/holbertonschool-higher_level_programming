@@ -74,7 +74,7 @@ class Rectangle:
         str_rectangle = ""
         if self.__height == 0 or self.__width == 0:
             return str_rectangle
-        for row in range(self.__height):
+        for row in range(self.__height - 1):
             for item in range(self.__width):
                 str_rectangle += "#"
             str_rectangle += "\n"
@@ -87,7 +87,7 @@ class Rectangle:
         str_rectangle = ""
         if self.__height == 0 or self.__width == 0:
             return str_rectangle
-        for row in range(self.__height):
+        for row in range(self.__height - 1):
             for item in range(self.__width):
                 str_rectangle += "#"
             str_rectangle += "\n"
