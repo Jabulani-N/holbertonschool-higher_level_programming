@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 """module for class Rectangle.
 
-new features: _str_ and _repr_ return string of Rectangle isntance
+new features:
+_str_ returns string of Rectangle isntance
+Rectangle_instance returns the same as str(rectangle_instance)
 """
 
 
@@ -74,21 +76,10 @@ class Rectangle:
         str_rectangle = ""
         if self.__height == 0 or self.__width == 0:
             return str_rectangle
-        for row in range(self.__height - 1):
+        for row in range(self.__height):
             for item in range(self.__width):
                 str_rectangle += "#"
             str_rectangle += "\n"
+        str_rectangle = str_rectangle.strip()
         return str_rectangle
 
-    def __repr__(self):
-        """returns a string rectangle of #s
-        width wide and height tall
-        """
-        str_rectangle = ""
-        if self.__height == 0 or self.__width == 0:
-            return str_rectangle
-        for row in range(self.__height - 1):
-            for item in range(self.__width):
-                str_rectangle += "#"
-            str_rectangle += "\n"
-        return str_rectangle
