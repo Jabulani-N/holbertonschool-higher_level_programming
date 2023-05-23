@@ -34,3 +34,10 @@ accesses own class via instance functions
 
 `type(self)` accesses class operations
 
+## Task 7
+
+### Potential Pitfalls
+
+be sure the rectangle printer pints hte instances own `self.print_symbol` and not the class's.
+
+the class's only exists for the purpose of altering what an instance defaults to
