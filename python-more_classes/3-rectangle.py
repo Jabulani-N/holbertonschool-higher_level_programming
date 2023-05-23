@@ -82,4 +82,3 @@ class Rectangle:
             str_rectangle += "\n"
         str_rectangle = str_rectangle.strip()
         return str_rectangle
-
