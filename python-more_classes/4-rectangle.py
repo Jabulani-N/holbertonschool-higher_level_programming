@@ -85,5 +85,5 @@ class Rectangle:
         return str_rectangle
 
     def __repr__(self):
-        reproduction = "Rectangle({self.__width}, {self.__height})"
+        reproduction = f'Rectangle({self.__width}, {self.__height})'
         return reproduction
