@@ -58,12 +58,37 @@ class Rectangle:
         self.__height = value
 
     def area(self):
+        """calcs and returns rectangle area"""
         return self.__height * self.__width
 
     def perimeter(self):
+        """calcs and returns rectangle perimiter"""
         if self.__width == 0 or self.__height == 0:
             return 0
         return 2 * (self.__width + self.__height)
 
     def __str__(self):
-        pass
+        """returns a string rectangle of #s
+        width wide and height tall
+        """
+        str_rectangle = ""
+        if self.__height == 0 or self.__width == 0:
+            return str_rectangle
+        for row in self.__height:
+            for item in self.__width:
+                str_rectangle += "#"
+            str_rectangle += "\n"
+        return str_rectangle
+
+    def __repr__(self):
+        """returns a string rectangle of #s
+        width wide and height tall
+        """
+        str_rectangle = ""
+        if self.__height == 0 or self.__width == 0:
+            return str_rectangle
+        for row in self.__height:
+            for item in self.__width:
+                str_rectangle += "#"
+            str_rectangle += "\n"
+        return str_rectangle
