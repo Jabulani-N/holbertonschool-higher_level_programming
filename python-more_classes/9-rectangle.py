@@ -110,4 +110,5 @@ class Rectangle:
         return rect_1
 
     def square(cls, size=0):
-        return cls.__init__(size, size)
+        """creates a square rectangle of width size"""
+        return cls(size, size)
