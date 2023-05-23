@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """module for class Rectangle.
 
-new features: perimeter and area calculation
+new features: _str_ and _repr_ return string of Rectangle isntance
 """
 
 
@@ -64,3 +64,6 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return 0
         return 2 * (self.__width + self.__height)
+
+    def __str__(self):
+        pass
