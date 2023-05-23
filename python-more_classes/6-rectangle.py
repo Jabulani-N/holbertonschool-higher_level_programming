@@ -6,7 +6,8 @@ public class attribute number_of_instances initializes at 0
 - incrases each instance cration
 - decreases each instance deletion
 
-some methods converted to class methods
+accesses own class via instance functions
+type(self) accesses class operations
 """
 
 
@@ -19,7 +20,7 @@ class Rectangle:
 
     """
     number_of_instances = 0
-    def __init__(cls, self, width=0, height=0):
+    def __init__(self, width=0, height=0):
         """__init__ to be called upon creating a Rectangle instance
         sizes are intentionally optional.
         """
@@ -34,7 +35,7 @@ class Rectangle:
 
         self.__height = height
         self.__width = width
-        cls.number_of_instances =+ 1
+        type(self).number_of_instances =+ 1
 
     @property
     def width(self):
@@ -94,3 +95,4 @@ class Rectangle:
 
     def __del__(self):
         print("Bye rectangle...")
+        type(self).number_of_instances -= 1
