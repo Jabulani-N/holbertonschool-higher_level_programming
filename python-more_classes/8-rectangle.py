@@ -103,6 +103,6 @@ class Rectangle:
             TypeError("rect_1 must be an instance of Rectangle")
         if isinstance(rect_2, Rectangle) is False:
             TypeError("rect_2 must be an instance of Rectangle")
-        if rect_2.area < rect_1.area:
+        if rect_2.area > rect_1.area:
             return rect_2
         return rect_1
