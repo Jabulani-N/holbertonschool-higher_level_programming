@@ -10,3 +10,5 @@
 
  - - an alias `is` the original.
 
+- - - if you want to make a clone of a list, for example, clone it via b = a[:]
+
