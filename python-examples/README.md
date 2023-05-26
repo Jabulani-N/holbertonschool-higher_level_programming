@@ -1,5 +1,7 @@
 # Python
 
+## [Python Glossary](http://www.openbookproject.net/thinkcs/python/english2e/ch09.html#aliasing)
+
 ## Misc. notes
 
 ### [Aliasing by OpenBookProject](http://www.openbookproject.net/thinkcs/python/english2e/ch09.html#aliasing)
