@@ -21,3 +21,7 @@ each ~~varaible~~ object has an identifier: a numerical value unique to it.
 if two variables point to the same object, as in `var1 is var2`, they will have the same id(entifier)
 
 - you'll find var's identifier via `id(var)`
+
+- noteworthily, becuase _everything_ is an object, that means that if `a = 89`, "89" is an object, and `a is 89`.
+
+- - what _that_ means is that if `b = 89` and `a = 89`, because they both `is 89`, they actually point to the same object: `89`. `a is b`, until one of them changes
