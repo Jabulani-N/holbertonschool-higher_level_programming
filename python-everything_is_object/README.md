@@ -24,4 +24,8 @@ if two variables point to the same object, as in `var1 is var2`, they will have 
 
 - noteworthily, becuase _everything_ is an object, that means that if `a = 89`, "89" is an object, and `a is 89`.
 
-- - what _that_ means is that if `b = 89` and `a = 89`, because they both `is 89`, they actually point to the same object: `89`. `a is b`, until one of them changes
+- - what _that_ means is that if `b = 89` and `a = 89`, because they both `is 89`, they actually point to the same object: `89`. `a is b`, until one of them changes.
+
+- - - This does _not_ apply to lists, or other containers, as can be seen when one of them changes. It appears that they instead create a unique list object that contains links, likely to the same int/char/etc objects. `a = [12]`; `b = [12]`; `a is not b`
+
+- - - - when changing the content of one of hte lists, it is equivalent to saying something like `b = 12` and then saying `b = 13`; it just makes the apppropriate new int object.
