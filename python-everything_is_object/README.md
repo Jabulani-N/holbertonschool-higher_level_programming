@@ -47,3 +47,16 @@ funct(a)
 
 behaves identically to `b = a` interactions shown above.
 
+### Tuples
+
+`exampleTuple = ("item 1", 2, ["three", "three and a half"], '4')`
+
+Tuples are immutable objects similar to lists, represented by parentheses.
+
+Key points
+
+* Tuples are immutable. once you set it, forget about chaning it
+
+* Tuples can be any length
+
+* Tuples can be, and often are, heterogenous, filled with multiple types
