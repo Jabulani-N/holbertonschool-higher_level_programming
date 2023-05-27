@@ -31,3 +31,19 @@ if two variables point to the same object, as in `var1 is var2`, they will have 
 - - - - when changing the content of one of the lists, it is equivalent to saying something like `b = 12` and then saying `b = 13`; it just makes the apppropriate new int object.
 
 - - - - now if `l1 = [1,2]` and `l2 = l1`, l2 is the list pointed to by l1; if you make a new list, that will not affect either of them unless you tell one of them they are now pointing to the new list.
+
+
+```
+
+a = anyhting
+
+def funct(b)
+
+    does stuff to b
+
+funct(a)
+
+```
+
+behaves identically to `b = a` interactions shown above.
+
