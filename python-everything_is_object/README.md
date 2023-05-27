@@ -51,6 +51,10 @@ behaves identically to `b = a` interactions shown above.
 
 `exampleTuple = ("item 1", 2, ["three", "three and a half"], '4')`
 
+`not_a_tuple = (1)`
+
+`singleton_tuple = (1, )`
+
 Tuples are immutable objects similar to lists, represented by parentheses.
 
 Key points
@@ -60,3 +64,5 @@ Key points
 * Tuples can be any length
 
 * Tuples can be, and often are, heterogenous, filled with multiple types
+
+* Tuples of one element (singletnos) **must** have a trailing comma to assert their tuple-ness
