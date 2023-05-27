@@ -69,5 +69,7 @@ Key points
 
 * `tup_a = (2, )` `tup_b = (2, )` `tup_a is not tup_b`
 
+* `tup_a = ()` `tup_b = ()` `tup_a is tup_b`
+
 * `NON-tup_a = ('2')` `NON-tup_b = ('2')` `NON-tup_a is NON-tup_b`
 
