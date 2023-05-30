@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-"""module returns JSON representation of a string"""
+"""module returns JSON representation of a string
+requires importing json
+"""
+import json
 
 
 def to_json_string(my_obj):
