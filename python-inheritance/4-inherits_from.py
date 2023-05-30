@@ -10,8 +10,8 @@ def inherits_from(obj, a_class):
     isinstance does
     """
     a = type(obj)
-    b = type(a_class)
-    if b == a:
+
+    if a_class == a:
         return False
     else:
         if isinstance(obj, a_class):
