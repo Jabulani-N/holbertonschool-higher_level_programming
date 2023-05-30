@@ -20,7 +20,7 @@ to read and write a file, one must use r+. rw does not work. 'a' opens the file 
 [article](https://docs.python.org/3/tutorial/inputoutput.html#saving-structured-data-with-json)
 
 
-you can turn a python object into json via `json.dumps(ex_object)`, which will return it, or `json.dump(x, f)`, which turns serializes object x into text file f.
+you can turn a python object into json via `json.dumps(ex_object)`, which will return it, or `json.dump(x, f)`, which serializes object x into text file f.
 
 to turn an item back again from file f which ahs been opened for reading, use `x = json.load(f)`.
 
