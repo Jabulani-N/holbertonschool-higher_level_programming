@@ -12,4 +12,5 @@ def save_to_json_file(my_obj, filename):
     uses operations from file-writing
     """
     with open(filename, 'w', encoding="utf-8") as f:
-        json.dump(my_obj, filename)  # dump will do the writing
+        json.dump(my_obj, f)  # dump will do the writing
+        # f is the text file object opened for writing
