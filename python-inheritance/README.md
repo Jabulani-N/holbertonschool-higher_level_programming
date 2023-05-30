@@ -23,3 +23,5 @@ A pyhton directory demonstrating class inheritance
 ## Task 1 - My list
 
 `sorted(ex_list)` returns a list containing ex_list's elements, but sorted alphanumerically.
+
+you can do `ex_MyList = MyList()` to initialize a MyList.
