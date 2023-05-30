@@ -7,4 +7,4 @@ requires no import
 
 def class_to_json(obj):
     """returns list of obj's dict"""
-    return list(obj.__dict__)
+    return obj.__dict__
