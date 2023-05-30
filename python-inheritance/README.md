@@ -79,3 +79,7 @@ be sure testFile imports the module you want to test.
 5 is the expected result. The test will "fail" if running the program does not give the expected result.
 
 If throwing an error is the expected result, the test will "pass" if running the program throws an error.
+
+## Task 2
+
+`isinstance(exam, a_class)` will say True if the exam is a child inherited from a_class.
