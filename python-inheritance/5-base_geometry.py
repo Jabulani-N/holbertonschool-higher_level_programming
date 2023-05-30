@@ -1,11 +1,8 @@
 #!/usr/bin/python3
-"""module holds a class that inherits class list
-
-it will replicate the funciton of the 'sorted' command
-"""
+"""module does nothing"""
 
 
-class MyList(list):
+class BaseGeometry():
     """does nothing"""
 
     pass
