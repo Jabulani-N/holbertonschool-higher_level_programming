@@ -2,18 +2,24 @@
 
 'Function to test: print_sorted(self)'
 
->>> print_sorted = __import__('1-my_list').print_sorted
+>>> MyList = __import__('1-my_list').MyList
 
 'test for already ordered int-filled my_list'
 
->>> a = MyLsit()
->>> a += [0, 1, 2, 3]
+>>> a = MyList()
+>>> a.append(0)
+>>> a.append(1)
+>>> a.append(2)
+>>> a.append(3)
 >>> a.print_sorted()
 [0, 1, 2, 3]
 
 'test for list with ordered strings'
 
->>> a = MyLsit()
->>> a += ['a', 'b', 'c', 'd']
+>>> a = MyList()
+>>> a.append('a')
+>>> a.append('b')
+>>> a.append('c')
+>>> a.append('d')
 >>> a.print_sorted()
 ['a', 'b', 'c', 'd']
