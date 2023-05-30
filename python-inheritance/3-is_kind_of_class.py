@@ -3,7 +3,5 @@
 
 
 def is_same_class(obj, a_class):
-    """uses isnstance, as isinstance allows inherited to be True"""
-
-
+    """uses isinstance, which allows children to be True"""
     return isinstance(obj, a_class)
