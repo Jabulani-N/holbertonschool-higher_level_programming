@@ -61,7 +61,7 @@ Tuples are immutable objects similar to lists, represented by parentheses.
 
 Key points
 
-* Tuples are immutable. once you set it, forget about chaning it
+* Tuples are immutable. once you set it, forget about changing it
 
 * Tuples can be any length
 
