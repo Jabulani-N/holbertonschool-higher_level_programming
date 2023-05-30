@@ -10,6 +10,7 @@ def load_from_json_file(filename):
 
     uses operations from file-reading
     """
-    with open(filename, 'w', encoding="utf-8") as f:
-        json.dump(my_obj, f)  # dump will do the writing
-        # f is the text file object opened for writing
+    with open(filename, 'r', encoding="utf-8") as f:
+        str = json.load(f)  # load will do the reaading
+        # f is the text file object opened for reading
+    return str
