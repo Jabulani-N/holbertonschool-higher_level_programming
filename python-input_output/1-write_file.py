@@ -1,13 +1,14 @@
 #!/usr/bin/python3
-"""module will read a file and print it"""
+"""module will write text to a file"""
 
 
-def read_file(filename=""):
-    """reads file filename and prints it
+def write_file(filename="", text=""):
+    """writes text text to file filename
     uses with operator
     filename is the input argument
+    text is input argument
     """
 
-    with open(filename, 'r', encoding="utf-8") as f:
-        read_data = f.read()
-    print(read_data, end="")
+    with open(filename, 'rw', encoding="utf-8") as f:
+        typed = f.write(text)
+    return typed
