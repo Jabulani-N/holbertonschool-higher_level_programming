@@ -10,5 +10,5 @@ def class_to_json(obj):
     likely  works one some other objects too
     may be able to use string() to turn the dict into a string to dump
     """
-
-    return json.dumps(my_obj)
+# need to seralize the __dict__
+    return json.dumps(obj.__dict__)
