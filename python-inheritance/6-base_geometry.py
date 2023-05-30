@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-"""module does nothing"""
+"""module will be parent of various geometric shapes"""
 
 
 class BaseGeometry():
-    """does nothing"""
+    """holds attributes common to shapes"""
 
     def area(self):
-        """throws an exception"""
-        raise Exception("area() is not implemented")
+        """will do something"""
+        pass
