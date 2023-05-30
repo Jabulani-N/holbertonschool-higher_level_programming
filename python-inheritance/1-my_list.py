@@ -5,6 +5,10 @@ it will replicate the funciton of the 'sorted' command
 """
 
 
-def lookup(obj):
-    """the only method needed"""
-    return dir(obj)
+class MyList(list):
+    """inherits list and adds a method"""
+
+    def print_sorted(self):
+        """use sorted"""
+
+        return sorted(self)

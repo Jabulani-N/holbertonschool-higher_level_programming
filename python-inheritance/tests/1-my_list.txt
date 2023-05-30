@@ -1,0 +1,15 @@
+'Test for 1-my_list module, within 1-my_list.py'
+
+'Function to test: print_sorted(self)'
+
+>>> print_sorted = __import__('1-my_list').print_sorted
+
+'test for positive integer division'
+
+>>> print_sorted([[0,1,2,3],[0,11,22,33],[0,111,222,333]], 3)
+[[0,.33,.67,1],[0,3.33,6.67,11],[33.33,366.67,111]]
+
+'test for negaitve integer division'
+
+>>> print_sorted([[0,1,2,3],[0,11,22,33],[0,111,222,333]], -3)
+[[-0,.33,-.67,-1],[-0,3.33,-6.67,-11],[-33.33,-66.67,-111]]
