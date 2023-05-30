@@ -5,7 +5,7 @@ A pyhton directory demonstrating class inheritance
 
 [this links to](https://github.com/Jabulani-N/holbertonschool-higher_level_programming/blob/main/python-examples/inheritence_notes.md) supplimentary notes taken before the project began.
 
-## Task 1 - lookup
+## Task 0 - lookup
 
 `dir(obj)` returns a list of all attributes and methods available to `obj`.
 
@@ -20,3 +20,6 @@ A pyhton directory demonstrating class inheritance
 >>>
 
 ```
+## Task 1 - My list
+
+`sorted(ex_list)` returns a list containing ex_list's elements, but sorted alphanumerically.
