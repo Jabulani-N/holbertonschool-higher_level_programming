@@ -11,5 +11,5 @@ def save_to_json_file(my_obj, filename):
 
     uses operations from file-writing
     """
-
-    json.dump(my_obj, filename)
+    with open(filename, 'w', encoding="utf-8") as f:
+        json.dump(my_obj, filename)  # dump will do the writing
