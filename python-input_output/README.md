@@ -13,7 +13,7 @@ to read and write a file, one must use r+. rw does not work. 'a' opens the file 
 
 - when a file is opened for appending, uwsing write will append to the file instead of overwriting it.
 
-## Task 3,4 - JSON
+## Task 3,4,5,6 - JSON
 
 `import json`
 
