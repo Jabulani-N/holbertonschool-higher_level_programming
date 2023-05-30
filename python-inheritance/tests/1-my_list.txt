@@ -4,12 +4,16 @@
 
 >>> print_sorted = __import__('1-my_list').print_sorted
 
-'test for positive integer division'
+'test for already ordered int-filled my_list'
 
->>> print_sorted([[0,1,2,3],[0,11,22,33],[0,111,222,333]], 3)
-[[0,.33,.67,1],[0,3.33,6.67,11],[33.33,366.67,111]]
+>>> a = MyLsit()
+>>> a += [0, 1, 2, 3]
+>>> a.print_sorted()
+[0, 1, 2, 3]
 
-'test for negaitve integer division'
+'test for list with ordered strings'
 
->>> print_sorted([[0,1,2,3],[0,11,22,33],[0,111,222,333]], -3)
-[[-0,.33,-.67,-1],[-0,3.33,-6.67,-11],[-33.33,-66.67,-111]]
+>>> a = MyLsit()
+>>> a += ['a', 'b', 'c', 'd']
+>>> a.print_sorted()
+['a', 'b', 'c', 'd']
