@@ -9,4 +9,6 @@ Directory about file reading in Python, and input/output operations.
 
 writing to file uses the following syntax: `f.write(string)` where f has been made equal to an opened file., and string is what you want to write to the file.
 
-to read and write a file, one must use r+. rw does not work. 'a' opens the file for appending
+to read and write a file, one must use r+. rw does not work. 'a' opens the file for appending.
+
+- when a file is opened for appending, uwsing write will append to the file instead of overwriting it.
