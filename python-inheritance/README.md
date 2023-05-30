@@ -1,8 +1,9 @@
 
 # Python - Inheritance
 
-
 A pyhton directory demonstrating class inheritance
+
+[this links to](https://github.com/Jabulani-N/holbertonschool-higher_level_programming/blob/main/python-examples/inheritence_notes.md) supplimentary notes taken before the project began.
 
 ## Task 1 - lookup
 
