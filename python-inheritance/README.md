@@ -8,7 +8,7 @@ A pyhton directory demonstrating class inheritance
 
 `dir(obj)` returns a list of all attributes and methods available to `obj`.
 
-`list(stuff)` converts serially create items, such as from `x for x in range(y)` statements, into a list and returns the created list
+`list(stuff)` converts serially create items, such as from `x for x in range(y)` statements, into a list and returns the created list. if given a list, returns a copy of the same list given. `list(ex_list)` **does not** returns an alias of ex_list.
 
 ```
 
