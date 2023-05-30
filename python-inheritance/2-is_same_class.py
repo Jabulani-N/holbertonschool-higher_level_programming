@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-"""module holds a function to retun an object's attributes and methods"""
+"""module holds a function to tell if object is of class"""
 
 
-def lookup(obj):
-    """the only method needed"""
-    return dir(obj)
+def is_same_class(obj, a_class):
+    """uses isnstance"""
+    return isinstance(obj, a_class)
