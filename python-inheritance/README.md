@@ -25,3 +25,57 @@ A pyhton directory demonstrating class inheritance
 `sorted(ex_list)` returns a list containing ex_list's elements, but sorted alphanumerically.
 
 you can do `ex_MyList = MyList()` to initialize a MyList.
+
+### how to use test files:
+
+run in the terminal:
+
+```
+
+python3 -m doctest -v testFile
+
+```
+
+optionally followed by ` | tail -4` or ` | tail -2` (on the same line) to only print final results
+
+be sure testFile imports the module you want to test.
+
+**Example of test file with a single test**
+
+```
+
+'comment'
+
+>>> content that will be run as though from terminal
+
+
+```
+
+```
+
+'Test for 0-add_integer module, within 0-add_integer.py'
+
+
+
+'Function to test: add_integer(a, b=98)'
+
+
+
+
+>>> add_integer = __import__('0-add_integer').add_integer
+
+
+
+'test for positive integer addition'
+
+
+
+>>> add_integer(2, 3)
+
+5
+
+```
+
+5 is the expected result. The test will "fail" if running the program does not give the expected result.
+
+If throwing an error is the expected result, the test will "pass" if running the program throws an error.
