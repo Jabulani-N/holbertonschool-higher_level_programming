@@ -18,6 +18,12 @@ class Square (Rectangle):
         super().__init__(size, size)
         self.__size = size
 
+        def area(self):
+            """pulls from parent,
+            becase it didn't for some reaon
+            """
+            super().area()
+
     def __str__(self):
         """happens when you say print(instance)
         overwrites the parent's version
