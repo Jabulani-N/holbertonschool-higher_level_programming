@@ -31,3 +31,4 @@ to turn an item back again from file f which ahs been opened for reading, use `x
 
 - similarly to dump and dumps, `json.loads(obj)`,performs the operation with oython objects instaed.
 
+No comments allowed in JSON
