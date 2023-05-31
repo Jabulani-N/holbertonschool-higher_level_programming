@@ -87,3 +87,9 @@ If throwing an error is the expected result, the test will "pass" if running the
 ## Task7
 
 (re)defines __str__ , but not __repr__ to alter what happens when you call the instance itself
+
+### potential pitfall
+
+use `super().example_method`
+
+- the "()" is important.
