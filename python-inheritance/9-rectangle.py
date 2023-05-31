@@ -23,5 +23,5 @@ class Rectangle (BaseGeometry):
 
     def __str__(self):
         """happens when you say print(instance)"""
-        selfstring = "[Rectangle] " + self.__width + "/" + self.__height
+        selfstring = "[Rectangle] " + str(self.__width) + "/" + str(self.__height)
         return selfstring
