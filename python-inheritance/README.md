@@ -83,3 +83,7 @@ If throwing an error is the expected result, the test will "pass" if running the
 ## Task 2
 
 `isinstance(exam, a_class)` will say True if the exam is a child inherited from a_class.
+
+## Task7
+
+(re)defines __str__ to alter what happens when you call the instance itself
