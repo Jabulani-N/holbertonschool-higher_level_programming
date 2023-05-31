@@ -18,8 +18,10 @@ class Rectangle (BaseGeometry):
     @property
     def area(self):
         """calculates area"""
-        return self.__height * self.__width
+        area = self.__height * self.__width
+        return area
 
     def __str__(self):
         """happens when you say print(instance)"""
-        return "[Rectangle] " + self.__width + "/" + self.__height
+        selfstring = "[Rectangle] " + self.__width + "/" + self.__height
+        return selfstring
