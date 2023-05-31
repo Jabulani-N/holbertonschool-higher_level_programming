@@ -15,7 +15,7 @@ class Rectangle (BaseGeometry):
         self.__width = width
         self.__height = height
 
-    @property
+    # @property
     def area(self):
         """calculates area"""
         area = self.__height * self.__width
