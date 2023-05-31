@@ -7,4 +7,11 @@ requires no import
 
 def class_to_json(obj):
     """returns list of obj's dict"""
-    return obj.__dict__
+    dict_desc = {}
+
+    attributes = obj.__dict__
+
+    for attr, value in attributes.items():
+        if type(value) in [list, dict, str, int, bool]:
+            dict_desc[attr] = value
+    return dict_desc

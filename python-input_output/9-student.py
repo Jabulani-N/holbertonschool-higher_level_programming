@@ -6,6 +6,8 @@ class Student():
     """arimas"""
 
     def __init__(self, first_name, last_name, age):
-
-        """throws an exception"""
-        raise Exception("area() is not implemented")
+        """comes into existance"""
+        self.first_name = first_name
+        self.last_name = last_name
+        self.age = age
+        
