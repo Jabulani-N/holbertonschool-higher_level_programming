@@ -1,18 +1,14 @@
 #!/usr/bin/python3
 """ creates class Base"""
 
+Base = __import__('base').Base
 
-class Base:
-    """has attribute __nb_objects"""
+class Rectrnagle(Base):
+    """inehrits from base"""
 
-    __nb_objects = 0
 
-    def __init__(self, id=None):
-        """__init__ method documentation
-        assume any given id is an int, and DO NOT TEST for that
+    def __init__(self, width, height, x=0, y=0, id=None):
+        """all starter attributes will be private
+        all will use getters and setters
         """
-        if id is not None:
-            self.id = id
-        else:
-            Base.__nb_objects += 1
-            self.id = Base.__nb_objects
+
