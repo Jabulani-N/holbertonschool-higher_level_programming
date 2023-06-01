@@ -1,6 +1,10 @@
 #!/usr/bin/python3
 """testing module using unittest
 This module exclusively tests the Base class
+
+find a way to directly import the base class
+it's like "from something import Base"
+then you can do the "Base(89) the checker wants
 """
 
 
