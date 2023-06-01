@@ -10,7 +10,7 @@ then you can do the "Base(89) the checker wants
 
 import unittest
 
-Base = __import__('base').Base
+from models.base import Base
 
 
 class testingTask1(unittest.TestCase):
