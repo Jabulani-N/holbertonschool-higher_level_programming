@@ -35,13 +35,13 @@ take an integer argument. assign it to self.id.
 
     @property
 
-    methodname(self):
+    def methodname(self):
 
         return self.something
 
     @methodname.setter
 
-    methodname(self, some_input)
+    def methodname(self, some_input)
 
         #does something
 ```
