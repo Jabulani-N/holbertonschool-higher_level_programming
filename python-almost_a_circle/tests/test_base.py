@@ -5,6 +5,9 @@ This module exclusively tests the Base class
 find a way to directly import the base class
 it's like "from something import Base"
 then you can do the "Base(89) the checker wants
+
+consider looking at at least two other test files
+to see how they are structured
 """
 
 
