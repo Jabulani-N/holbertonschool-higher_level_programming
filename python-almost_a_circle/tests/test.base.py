@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """testing module using unittest
+This module exclusively tests the Base class
 """
 
 
