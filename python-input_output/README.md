@@ -31,3 +31,4 @@ to turn an item back again from file f which ahs been opened for reading, use `x
 
 - similarly to dump and dumps, `json.loads(obj)`,performs the operation with oython objects instaed.
 
+using `with` to open files causes it to automatically close the file. you can see this via `example_file_object.closed()`, which will return `True` or `False` based on current status.
