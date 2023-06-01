@@ -19,8 +19,8 @@ class testingTask1(unittest.TestCase):
 
     # self.assert(thing, what_thing_should_equal_to_pass_test)
     def test_empty_input(self):
-        newbase = Base(4444)
-        self.assertEqual(newbase.id, 4444)
+        newbase = Base(89)
+        self.assertEqual(newbase.id, 89)
 
 
 if __name__ == '__main__':
