@@ -28,3 +28,20 @@ Task5 of the Test-driven Development directory of this repository demonstrates u
 ## Task 1 - Base class
 
 take an integer argument. assign it to self.id.
+
+[refresher](https://github.com/Jabulani-N/holbertonschool-higher_level_programming/tree/main/python-classes) of getter and setter methods:
+
+```
+
+    @property
+
+    methodname(self):
+
+        return self.something
+
+    @methodname.setter
+
+    methodname(self, some_input)
+
+        #does something
+```
