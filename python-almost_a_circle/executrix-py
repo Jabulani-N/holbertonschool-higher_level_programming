@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#gives user execution permissions to all .py files in current directory
+chmod -v u+x *.py
