@@ -7,9 +7,9 @@ it'll save space from validating every setter manually
 
 from models.base import Base
 
+
 class Rectangle (Base):
     """inehrits from base"""
-
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """all starter attributes will be private
@@ -18,7 +18,7 @@ class Rectangle (Base):
         super().__init__(id)
         self.__width = width
         self.__height = height
-        self.__x  = x
+        self.__x = x
         self.__y = y
 
     @property
@@ -30,7 +30,6 @@ class Rectangle (Base):
     def width(self, imp):
         """sets above property"""
         self.__width = imp
-
 
     @property
     def height(self):
