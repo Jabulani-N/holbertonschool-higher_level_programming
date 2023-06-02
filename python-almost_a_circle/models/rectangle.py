@@ -7,7 +7,7 @@ it'll save space from validating every setter manually
 
 Base = __import__('base').Base
 
-class Rectrnagle(Base):
+class Rectangle (Base):
     """inehrits from base"""
 
 
