@@ -20,6 +20,7 @@ class Rectangle (Base):
             raise TypeError(name + " must be an integer")
         if value <= 0:
             raise ValueError(name + " must be > 0")
+        return True  # so we have a success output
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """all starter attributes will be private
@@ -43,8 +44,8 @@ class Rectangle (Base):
     @width.setter
     def width(self, imp):
         """sets above property"""
-        self.integer_validator("width", imp)
-        self.__width = imp
+        if self.integer_validator("width", imp):
+            self.__width = imp
 
     @property
     def height(self):
@@ -54,8 +55,8 @@ class Rectangle (Base):
     @height.setter
     def height(self, imp):
         """sets above property"""
-        self.integer_validator("height", imp)
-        self.__height = imp
+        if self.integer_validator("height", imp):
+            self.__height = imp
 
     @property
     def x(self):
@@ -65,8 +66,8 @@ class Rectangle (Base):
     @x.setter
     def x(self, imp):
         """sets above property"""
-        self.integer_validator("x", imp)
-        self.__x = imp
+        if self.integer_validator("x", imp):
+            self.__x = imp
 
     @property
     def y(self):
@@ -76,5 +77,5 @@ class Rectangle (Base):
     @y.setter
     def y(self, imp):
         """sets above property"""
-        self.integer_validator("y", imp)
-        self.__y = imp
+        if self.integer_validator("y", imp):
+            self.__y = imp
