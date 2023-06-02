@@ -90,4 +90,5 @@ class Rectangle (Base):
             self.__y = imp
 
     def area(self):
+        """calculates and returns area"""
         return self.__width * self.__height
