@@ -26,10 +26,10 @@ class Rectangle (Base):
         all will use getters and setters
         """
         super().__init__(id)
-        self.integer_validator("width", imp)
-        self.integer_validator("height", imp)
-        self.integer_validator("x", imp)
-        self.integer_validator("y", imp)
+        self.integer_validator("width", width)
+        self.integer_validator("height", height)
+        self.integer_validator("x", x)
+        self.integer_validator("y", y)
         self.__width = width
         self.__height = height
         self.__x = x
