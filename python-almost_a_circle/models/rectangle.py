@@ -11,16 +11,6 @@ from models.base import Base
 class Rectangle (Base):
     """inehrits from base"""
 
-    def __init__(self, width, height, x=0, y=0, id=None):
-        """all starter attributes will be private
-        all will use getters and setters
-        """
-        super().__init__(id)
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
-
     def integer_validator(self, name, value):
         """validate value. assume name will be string
         based on python-inheritance project task 7
@@ -30,6 +20,20 @@ class Rectangle (Base):
             raise TypeError(name + " must be an integer")
         if value <= 0:
             raise ValueError(name + " must be > 0")
+
+    def __init__(self, width, height, x=0, y=0, id=None):
+        """all starter attributes will be private
+        all will use getters and setters
+        """
+        super().__init__(id)
+        self.integer_validator("width", imp)
+        self.integer_validator("height", imp)
+        self.integer_validator("x", imp)
+        self.integer_validator("y", imp)
+        self.__width = width
+        self.__height = height
+        self.__x = x
+        self.__y = y
 
     @property
     def width(self):
