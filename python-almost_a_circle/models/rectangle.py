@@ -5,7 +5,7 @@ use it on the setters
 it'll save space from validating every setter manually
 """
 
-Base = __import__('base').Base
+from models.base import Base
 
 class Rectangle (Base):
     """inehrits from base"""
