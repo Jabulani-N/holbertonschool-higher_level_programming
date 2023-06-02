@@ -23,33 +23,41 @@ class Rectangle (Base):
 
     @property
     def width(self):
+        """gets above property"""
         return self.__width
 
     @width.setter
     def width(self, imp):
+        """sets above property"""
         self.__width = imp
 
 
     @property
     def height(self):
+        """gets above property"""
         return self.__height
 
     @height.setter
     def height(self, imp):
+        """sets above property"""
         self.__height = imp
 
     @property
     def x(self):
+        """gets above property"""
         return self.__x
 
     @x.setter
     def x(self, imp):
+        """sets above property"""
         self.__x = imp
 
     @property
     def y(self):
+        """gets above property"""
         return self.__y
 
     @y.setter
     def y(self, imp):
+        """sets above property"""
         self.__y = imp
