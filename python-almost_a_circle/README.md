@@ -12,6 +12,8 @@ each task will have unittests associated with it.
 
 Task5 of the Test-driven Development directory of this repository demonstrates unitteset use.
 
+there is such a thing as `assertRaises(TypeError)`
+
 ### task 1 unitteset
 
 * if given no argumenmt, self.id() should equal none
