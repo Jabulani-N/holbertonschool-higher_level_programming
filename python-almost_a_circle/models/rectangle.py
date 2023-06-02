@@ -88,3 +88,7 @@ class Rectangle (Base):
         """sets above property"""
         if self.integer_validator0("y", imp):
             self.__y = imp
+
+    @property
+    def area(self):
+        return self.__width * self.__height
