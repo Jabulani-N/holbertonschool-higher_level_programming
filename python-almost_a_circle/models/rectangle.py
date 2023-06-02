@@ -21,18 +21,15 @@ class Rectangle (Base):
         self.__x = x
         self.__y = y
 
-    def area(self):
-        raise Exception("area() is not implemented")
-
     def integer_validator(self, name, value):
         """validate value. assume name will be string
-        based on inheritance project task 7
+        based on python-inheritance project task 7
         assume name is always stirng
         """
         if type(value) is not int:
             raise TypeError(name + " must be an integer")
         if value <= 0:
-            raise ValueError(name + " must be greater than 0")
+            raise ValueError(name + " must be > 0")
 
     @property
     def width(self):
@@ -42,6 +39,7 @@ class Rectangle (Base):
     @width.setter
     def width(self, imp):
         """sets above property"""
+        self.integer_validator("width", imp)
         self.__width = imp
 
     @property
@@ -52,6 +50,7 @@ class Rectangle (Base):
     @height.setter
     def height(self, imp):
         """sets above property"""
+        self.integer_validator("height", imp)
         self.__height = imp
 
     @property
@@ -62,6 +61,7 @@ class Rectangle (Base):
     @x.setter
     def x(self, imp):
         """sets above property"""
+        self.integer_validator("x", imp)
         self.__x = imp
 
     @property
@@ -72,4 +72,5 @@ class Rectangle (Base):
     @y.setter
     def y(self, imp):
         """sets above property"""
+        self.integer_validator("y", imp)
         self.__y = imp
