@@ -102,4 +102,4 @@ class Rectangle (Base):
             for column in range(self.__width):
                 str_rectangle += "#"
             str_rectangle += '\n'
-        print(str_rectangle)
+        print(str_rectangle, end = "")
