@@ -92,3 +92,14 @@ class Rectangle (Base):
     def area(self):
         """calculates and returns area"""
         return self.__width * self.__height
+
+    def display(self):
+        """prints a rectangle
+        based on instance attributes
+        """
+        str_rectangle = ""
+        for row in range(self.__height):
+            for column in range(self.__width):
+                str_rectangle += "#"
+            str_rectangle += '\n'
+        print(str_rectangle)
