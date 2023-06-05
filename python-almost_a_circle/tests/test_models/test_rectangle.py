@@ -20,6 +20,12 @@ class TestRectangle(unittest.TestCase):
         """tests creating a rectangle with
         width and height of different values
         """
+        self.assertRaises(ValueError, Rectangle(0, 0))
+        self.assertRaises(ValueError, Rectangle(-1, -50))
+        self.assertRaises(TypeError, Rectangle('lol', 10))
+        self.assertRaises(TypeError, Rectangle(11111, 'rofl'))
+        rect_valid = Rectangle(2,3)
+        self.assertEqual
         pass
 
     def test_x_y_assignment(self):
