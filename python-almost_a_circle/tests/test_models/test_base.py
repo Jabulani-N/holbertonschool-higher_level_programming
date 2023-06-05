@@ -23,12 +23,14 @@ class TestBase(unittest.TestCase):
 
     a proper setup() function will accelerate class creation
     """
-
-
     # self.assert(thing, what_thing_should_equal_to_pass_test)
-    def test_empty_input(self):
-        newbase = Base(89)
-        self.assertEqual(newbase.id, 89)
+    def test_id_assignment(self):
+        newbase1 = Base()
+        newbase2 = Base(89)
+        newbase3 = Base()
+        self.assertEqual(newbase1.id, 1)
+        self.assertEqual(newbase2.id, 89)
+        self.assertEqual(newbase3.id, 2)
 
 
 if __name__ == '__main__':
