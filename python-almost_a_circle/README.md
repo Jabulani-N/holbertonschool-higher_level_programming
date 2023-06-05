@@ -53,3 +53,10 @@ take an integer argument. assign it to self.id.
 
         #does something
 ```
+
+## task 8 - Update
+
+### [*args](https://yasoob.me/2013/08/04/args-and-kwargs-in-python-explained/)
+
+this task uses `*args`
+

@@ -50,7 +50,16 @@ class TestRectangle(unittest.TestCase):
         """tests creating a rectangle with x and y valeus
         tests the getter for both
         """
-        pass
+        with self.assertRaises(ValueError):
+            Rectangle(10, 10, -1, 0)
+        with self.assertRaises(ValueError):
+            Rectangle(10, 10, 2, -1)
+        with self.assertRaises(TypeError):
+            Rectangle(2, 10, "lol", 2)
+        with self.assertRaises(TypeError):
+            Rectangle(11111, 2222, 3, 'rofl')
+        rect_valid = Rectangle(2, 3, 1, 2)
+        self.assertEqual(rect_valid.display(),"\n\n\n   ##\n   ##")
 
 
 if __name__ == '__main__':
