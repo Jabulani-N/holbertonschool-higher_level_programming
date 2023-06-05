@@ -103,3 +103,8 @@ class Rectangle (Base):
                 str_rectangle += "#"
             str_rectangle += '\n'
         print(str_rectangle, end="")
+
+    def __str__(self):
+        return "[Rectangle] (" + str(self.id) + ") " +\
+               str(self.__x) + "/" + str(self.__y) + " - " +\
+               str(self.__width) + "/" + str(self.__height)
