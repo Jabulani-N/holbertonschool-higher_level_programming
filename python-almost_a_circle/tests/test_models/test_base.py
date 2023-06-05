@@ -23,7 +23,7 @@ class TestBase(unittest.TestCase):
 
     a proper setup() function will accelerate class creation
     """
-    # self.assert(thing, what_thing_should_equal_to_pass_test)
+    # self.assertEqual(thing, what_thing_should_equal_to_pass_test)
     def test_id_assignment(self):
         newbase1 = Base()
         newbase2 = Base(89)
