@@ -135,15 +135,15 @@ class Rectangle (Base):
                     self.id = arg_itself
             elif argnum is 1:
                 # validate and assign for width
-                if self.integer_validator1("width", arg_itself):
-                    self.__width = arg_itself
+                self.integer_validator1("width", arg_itself)
+                self.__width = arg_itself
             elif argnum is 2:  # height
-                if self.integer_validator1("height", arg_itself):
-                    self.__height = arg_itself
+                self.integer_validator1("height", arg_itself)
+                self.__height = arg_itself
             elif argnum is 3:  # x
-                if self.integer_validator0("x", arg_itself):
-                    self.__x = arg_itself
+                self.integer_validator0("x", arg_itself)
+                self.__x = arg_itself
             elif argnum is 4:  # y
-                if self.integer_validator0("y", arg_itself):
-                    self.__y = arg_itself
+                self.integer_validator0("y", arg_itself)
+                self.__y = arg_itself
             argnum += 1  # keep up with arg_itself in args incrimenting
