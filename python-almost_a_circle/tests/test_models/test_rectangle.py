@@ -61,6 +61,12 @@ class TestRectangle(unittest.TestCase):
         rect_valid = Rectangle(2, 3, 1, 2)
         self.assertEqual(rect_valid.display(),"\n\n\n   ##\n   ##")
 
+    def update(self, *args):
+        """updates all the rectangle instance's attributes.
+        as many attributes as given.
+        runs the respective validator on each.
+        """
+
 
 if __name__ == '__main__':
     unittest.main
