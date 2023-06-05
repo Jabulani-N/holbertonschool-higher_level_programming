@@ -23,6 +23,17 @@ class TestBase(unittest.TestCase):
 
     a proper setup() function will accelerate class creation
     """
+
+    def setUp(self):
+        """Reset the __nb_objects counter.
+        print test"""
+        print("Base setUp")
+        Base._Base__nb_objects = 0
+
+
+    def tearDown(self):
+        print("Base tearDown")
+
     # self.assertEqual(thing, what_thing_should_equal_to_pass_test)
     def test_id_assignment(self):
         newbase1 = Base()
