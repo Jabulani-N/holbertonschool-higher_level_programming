@@ -112,3 +112,20 @@ class Rectangle (Base):
         return "[Rectangle] (" + str(self.id) + ") " +\
                str(self.__x) + "/" + str(self.__y) + " - " +\
                str(self.__width) + "/" + str(self.__height)
+
+    def update(self, *args):
+        """updates all the rectangle instance's attributes.
+        as many attributes as given.
+        runs the respective validator on each.
+
+        elif is used beacause the closes python has to a switch is
+        a dictionary. you'd use the 'switch' as the key,
+        and the 'do this' as the definition.
+        returning runnable code out of that? more work than worth
+        """
+        argnum = 0
+        for arg_itself in args:
+            if arg_itself is None:  # it's done all args, or got none
+                return
+            elif argnum is 0:
+                pass
