@@ -101,7 +101,7 @@ class Rectangle (Base):
         for heading in range(self.__y):
             str_rectangle += "\n"
         for row in range(self.__height):
-            for indent in range(self.__width):
+            for indent in range(self.__x):
                 str_rectangle += " "
             for column in range(self.__width):
                 str_rectangle += "#"
