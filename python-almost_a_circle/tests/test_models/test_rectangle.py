@@ -65,7 +65,15 @@ class TestRectangle(unittest.TestCase):
         """updates all the rectangle instance's attributes.
         as many attributes as given.
         runs the respective validator on each.
+
+        elif is used beacause the closes python has to a switch is
+        a dictionary. you'd use the 'switch' as the key,
+        and the 'do this' as the definition.
+        returning runnable code out of that? more work than worth
         """
+        argnum = 0
+        for arg_itself in args:
+            pass
 
 
 if __name__ == '__main__':
