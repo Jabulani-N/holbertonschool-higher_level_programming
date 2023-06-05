@@ -58,5 +58,5 @@ take an integer argument. assign it to self.id.
 
 ### [*args](https://yasoob.me/2013/08/04/args-and-kwargs-in-python-explained/)
 
-this task uses `*args`
+this task uses `*args`, a **tuple** that contains a variable numebr of argumemnts.
 
