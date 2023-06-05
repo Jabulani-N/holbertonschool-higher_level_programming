@@ -16,6 +16,10 @@ there is such a thing as `assertRaises(TypeError)`
 
 this will be graded via `python3 -m unittest discover tests`
 
+### Potential Pitfalls
+
+Testing getters: use `assertEqual(instance.attribute)` NOT assertEqual(instance.attribute())
+
 ### task 1 unitteset
 
 * if given no argumenmt, self.id() should equal none
