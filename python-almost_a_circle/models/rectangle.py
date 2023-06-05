@@ -98,7 +98,11 @@ class Rectangle (Base):
         based on instance attributes
         """
         str_rectangle = ""
+        for heading in range(self.__y):
+            str_rectangle += "\n"
         for row in range(self.__height):
+            for indent in range(self.__width):
+                str_rectangle += " "
             for column in range(self.__width):
                 str_rectangle += "#"
             str_rectangle += '\n'
