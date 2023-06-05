@@ -122,10 +122,25 @@ class Rectangle (Base):
         a dictionary. you'd use the 'switch' as the key,
         and the 'do this' as the definition.
         returning runnable code out of that? more work than worth
+
+        the order is id, width, height, x, y
         """
         argnum = 0
         for arg_itself in args:
             if arg_itself is None:  # it's done all args, or got none
-                return
+                return  # also prevents icrimenting argnum
             elif argnum is 0:
+                # validate and assign for id
+                if isinstance(arg_itself, int):
+                    self.id = arg_itself
+            elif argnum is 1:
+                # validate and assign for width
+                if self.integer_validator1("width", arg_itself):
+                    self.__width = arg_itself
+            elif argnum is 2:  # height
                 pass
+            elif argnum is 3:  # x
+                pass
+            elif argnum is 4:  # y
+                pass
+            argnum += 1  # keep up with arg_itself in args incrimenting
