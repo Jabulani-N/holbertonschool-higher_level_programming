@@ -16,7 +16,7 @@ import unittest
 from models.base import Base
 
 
-class Test_Base(unittest.TestCase):
+class TestBase(unittest.TestCase):
     """tests class for class Base.
     define a test, set up whatever you need between the
     def and self.assert.

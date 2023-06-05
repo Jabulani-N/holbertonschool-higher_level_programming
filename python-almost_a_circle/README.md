@@ -14,6 +14,8 @@ each task will have unittests associated with it.
 
 there is such a thing as `assertRaises(TypeError)`
 
+this will be graded via `python3 -m unittest discover tests`
+
 ### task 1 unitteset
 
 * if given no argumenmt, self.id() should equal none
