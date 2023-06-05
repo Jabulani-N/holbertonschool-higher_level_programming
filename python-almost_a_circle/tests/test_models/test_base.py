@@ -32,7 +32,6 @@ class TestBase(unittest.TestCase):
         self.assertEqual(newbase2.id, 89)
         self.assertEqual(newbase3.id, 2)
 
-
     def test_id_type(self):
         '''test the type of id attribute to ensure an integer'''
         base = Base(10)
