@@ -15,7 +15,7 @@ class TestRectangle(unittest.TestCase):
 
     a proper setup() function will accelerate class creation
     """
-    # self.assert(thing, what_thing_should_equal_to_pass_test)
+    # self.assertEqual(thing, what_thing_should_equal_to_pass_test)
     def test_width_height_assignment(self):
         """tests creating a rectangle with
         width and height of different values
@@ -25,7 +25,8 @@ class TestRectangle(unittest.TestCase):
         self.assertRaises(TypeError, Rectangle('lol', 10))
         self.assertRaises(TypeError, Rectangle(11111, 'rofl'))
         rect_valid = Rectangle(2,3)
-        self.assertEqual
+        self.assertEqual(rect_valid.width(), 2)
+        self.assertEqual(rect_valid.height(), 3)
         pass
 
     def test_x_y_assignment(self):
