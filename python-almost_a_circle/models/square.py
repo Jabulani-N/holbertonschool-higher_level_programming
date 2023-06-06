@@ -35,46 +35,13 @@ class Square(Rectangle):
         can be made more efficient by offloading
         all args that are not size-related to super's update
 
-        for the sake coder-hours, this will include reundant code instead.
+        A more efficient code method was found than in previous.
         """
-        argnum = 0
-        skipQwargs = False
+        if args:
+            attrs = ["id", "size", "x", "y"]
+            for i, arg in enumerate(args):
+                setattr(self, attrs[i], arg)
+        else:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
 
-        if args is not None:
-            for arg_itself in args:
-                if isinstance(arg_itself, dict) is False:
-                    skipQwargs = True
-                    # so that kwargs version only runs if exclusively kwargs
-                if arg_itself is None:  # it's done all args, or got none
-                    return  # also prevents icrimenting argnum
-                elif argnum == 0:
-                    # validate and assign for id
-                    if isinstance(arg_itself, int):
-                        self.id = arg_itself
-                elif argnum == 1:
-                    # validate and assign for width
-                    self.integer_validator1("size", arg_itself)
-                    self.size = arg_itself
-                elif argnum == 2:  # x
-                    self.integer_validator0("x", arg_itself)
-                    self.__x = arg_itself
-                elif argnum == 3:  # y
-                    self.integer_validator0("y", arg_itself)
-                    self.__y = arg_itself
-                argnum += 1  # keep up with arg_itself in args incrimenting
-
-        if skipQwargs is False:
-            # kwargs stuff goes here. only fires if args is empty
-            if kwargs is not None:
-                for key, value in kwargs.items():
-                    if key == "id":
-                        if isinstance(value, int):
-                            self.id = value
-                    elif key == "size":
-                        self.size = value
-                    elif key == "x":
-                        self.integer_validator0("x", value)
-                        self.__x = value
-                    elif key == "y":
-                        self.integer_validator0("y", value)
-                        self.__y = value
