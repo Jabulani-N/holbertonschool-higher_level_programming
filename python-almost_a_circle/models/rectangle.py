@@ -113,7 +113,7 @@ class Rectangle (Base):
                str(self.__x) + "/" + str(self.__y) + " - " +\
                str(self.__width) + "/" + str(self.__height)
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """updates all the rectangle instance's attributes.
         as many attributes as given.
         runs the respective validator on each.
@@ -126,24 +126,43 @@ class Rectangle (Base):
         the order is id, width, height, x, y
         """
         argnum = 0
-        for arg_itself in args:
-            if arg_itself is None:  # it's done all args, or got none
-                return  # also prevents icrimenting argnum
-            elif argnum is 0:
-                # validate and assign for id
-                if isinstance(arg_itself, int):
-                    self.id = arg_itself
-            elif argnum is 1:
-                # validate and assign for width
-                self.integer_validator1("width", arg_itself)
-                self.__width = arg_itself
-            elif argnum is 2:  # height
-                self.integer_validator1("height", arg_itself)
-                self.__height = arg_itself
-            elif argnum is 3:  # x
-                self.integer_validator0("x", arg_itself)
-                self.__x = arg_itself
-            elif argnum is 4:  # y
-                self.integer_validator0("y", arg_itself)
-                self.__y = arg_itself
-            argnum += 1  # keep up with arg_itself in args incrimenting
+        if args is not None:  # so that the kwargs version only runs if args is empty
+            for arg_itself in args:
+                if arg_itself is None:  # it's done all args, or got none
+                    return  # also prevents icrimenting argnum
+                elif argnum is 0:
+                    # validate and assign for id
+                    if isinstance(arg_itself, int):
+                        self.id = arg_itself
+                elif argnum == 1:
+                    # validate and assign for width
+                    self.integer_validator1("width", arg_itself)
+                    self.__width = arg_itself
+                elif argnum == 2:  # height
+                    self.integer_validator1("height", arg_itself)
+                    self.__height = arg_itself
+                elif argnum == 3:  # x
+                    self.integer_validator0("x", arg_itself)
+                    self.__x = arg_itself
+                elif argnum == 4:  # y
+                    self.integer_validator0("y", arg_itself)
+                    self.__y = arg_itself
+                argnum += 1  # keep up with arg_itself in args incrimenting
+        else:  # kwargs stuff goes here. only fires if args is empty tuple
+            if kwargs is not None:
+                for key, value in kwargs.iteritems():
+                    if key == "id":
+                        if isinstance(value, int):
+                            self.id = value
+                    elif key == "width":
+                        self.integer_validator1("width", value)
+                        self.__width = value
+                    elif key == "height":
+                        self.integer_validator1("height", value)
+                        self.__height = value
+                    elif key == "x":
+                        self.integer_validator0("x", value)
+                        self.__x = value
+                    elif key == "y":
+                        self.integer_validator0("y", value)
+                        self.__y = value
