@@ -65,3 +65,6 @@ this task uses `*args`, a **tuple** that contains a variable numebr of argumemnt
 if you get `AttributeError: 'dict' object has no attribute 'iteritems'`
 
 you may need to change your `kwargs.interitems()` into `kwargs.items()`
+
+
+[pyhton can access super setters directly, but not super setters](https://stackoverflow.com/questions/10810369/python-super-and-setting-parent-class-property)
