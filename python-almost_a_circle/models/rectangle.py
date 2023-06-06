@@ -173,3 +173,7 @@ class Rectangle (Base):
                     elif key == "y":
                         self.integer_validator0("y", value)
                         self.__y = value
+
+    def to_dictionary(self):
+        """pass"""
+        pass

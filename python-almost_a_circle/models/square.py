@@ -36,6 +36,9 @@ class Square(Rectangle):
         all args that are not size-related to super's update
 
         A more efficient code method was found than in previous.
+
+        currently does not function correctly.
+        review needed.
         """
         if args:
             attrs = ["id", "size", "x", "y"]
