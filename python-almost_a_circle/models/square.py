@@ -18,3 +18,14 @@ class Square(Rectangle):
         return "[Square] (" + str(self.id) + ") " +\
                str(self.x) + "/" + str(self.y) + " - " +\
                str(self.width)
+
+    @property
+    def size(self):
+        """gets above property"""
+        return self.width
+
+    @size.setter
+    def size(self, imp):
+        """sets above property"""
+        self.width = imp
+        self.height = imp
