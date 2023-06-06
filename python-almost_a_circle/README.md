@@ -78,3 +78,7 @@ you may need to change your `kwargs.interitems()` into `kwargs.items()`
 * Remember that python cannot directly call the super's setters.
 
 * * consider overriding them with identical code
+
+## Task 13 - dictionary
+
+instance dict is obtained `self.__dict__`

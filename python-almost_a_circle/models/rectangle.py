@@ -176,4 +176,4 @@ class Rectangle (Base):
 
     def to_dictionary(self):
         """return own dictioniary"""
-        return self.dict()
+        return self.__dict__
