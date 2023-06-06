@@ -126,11 +126,16 @@ class Rectangle (Base):
         the order is id, width, height, x, y
         """
         argnum = 0
-        if args is not None:  # so that the kwargs version only runs if args is empty
+        skipQwargs = False
+        if args is not None:
+
             for arg_itself in args:
+                if isinstance(arg_itself, dict) is False:
+                    skipQwargs = True
+                    # so that kwargs version only runs if exclusively kwargs
                 if arg_itself is None:  # it's done all args, or got none
                     return  # also prevents icrimenting argnum
-                elif argnum is 0:
+                elif argnum == 0:
                     # validate and assign for id
                     if isinstance(arg_itself, int):
                         self.id = arg_itself
@@ -148,9 +153,11 @@ class Rectangle (Base):
                     self.integer_validator0("y", arg_itself)
                     self.__y = arg_itself
                 argnum += 1  # keep up with arg_itself in args incrimenting
-        else:  # kwargs stuff goes here. only fires if args is empty tuple
+
+        if skipQwargs is False:
+            # kwargs stuff goes here. only fires if args is empty
             if kwargs is not None:
-                for key, value in kwargs.iteritems():
+                for key, value in kwargs.items():
                     if key == "id":
                         if isinstance(value, int):
                             self.id = value

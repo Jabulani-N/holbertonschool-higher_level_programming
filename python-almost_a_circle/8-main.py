@@ -24,8 +24,8 @@ if __name__ == "__main__":
 
     r1 = Rectangle(10, 10, 10, 10)
     print(r1)
-
-    r1.update(height=1)
+    print("the one with both args and kwargs is next")
+    r1.update(3, 5, height=1)
     print(r1)
 
     r1.update(width=1, x=2)

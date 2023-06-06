@@ -60,3 +60,8 @@ take an integer argument. assign it to self.id.
 
 this task uses `*args`, a **tuple** that contains a variable numebr of argumemnts.
 
+## task 9 - Update
+
+if you get `AttributeError: 'dict' object has no attribute 'iteritems'`
+
+you may need to change your `kwargs.interitems()` into `kwargs.items()`
