@@ -67,4 +67,14 @@ if you get `AttributeError: 'dict' object has no attribute 'iteritems'`
 you may need to change your `kwargs.interitems()` into `kwargs.items()`
 
 
-[pyhton can access super setters directly, but not super setters](https://stackoverflow.com/questions/10810369/python-super-and-setting-parent-class-property)
+[python can access super setters directly, but not super setters](https://stackoverflow.com/questions/10810369/python-super-and-setting-parent-class-property)
+
+# Known Issues
+
+## Square
+
+`update(self, *args, **kwargs)` is failing to correctly set properties.
+
+* Remember that python cannot directly call the super's setters.
+
+* * consider overriding them with identical code

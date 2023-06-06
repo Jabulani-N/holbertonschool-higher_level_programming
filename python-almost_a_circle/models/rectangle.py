@@ -175,5 +175,5 @@ class Rectangle (Base):
                         self.__y = value
 
     def to_dictionary(self):
-        """pass"""
-        pass
+        """return own dictioniary"""
+        return self.dict()
