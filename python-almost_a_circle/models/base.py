@@ -49,3 +49,16 @@ class Base:
         if json_string is None or json_string == "":
             return []
         return json.loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        """creates an instance from a dictionary
+        cls will be one of the base family
+        cls.__name__ gives the type
+        """
+        if cls.__name__ == "Rectangle":
+            holder = cls (1, 1)
+        else:
+            holder = cls (1)  # works for base and square
+        holder.update(**dictionary)
+        return holder
