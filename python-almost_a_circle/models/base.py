@@ -32,6 +32,13 @@ class Base:
         name the file {cls}.json
         """
         filename = cls.__name__ + ".json"
+        filecontent =""
+        list_dictionaries = []
+
+        for item in list_objs:
+            list_dictionaries.append(item.__dict__)
+        filecontent += cls.to_json_string(list_dictionaries)
         with open(filename, 'w', encoding="utf-8") as f:
-            json.dump(list_objs, f)  # dump will do the writing
-            # f is the text file object opened for writing
+            # write a file directly.
+            # we will be converting to string via sef.to_json_string
+            f.write(filecontent)
