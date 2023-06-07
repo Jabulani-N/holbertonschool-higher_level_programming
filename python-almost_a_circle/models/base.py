@@ -33,13 +33,13 @@ class Base:
         name the file {cls}.json
         """
         filename = cls.__name__ + ".json"
-        filecontent =""
-        list_dictionaries = []
+        with open(filename, "w") as f:
+            if list_objs is None:
+                f.write("[]")
+            else:
+                list_dicts = [obj.to_dictionary() for obj in list_objs]
+                # get each object's dictionary (they all inherit the method)
+                # puts that diciotnary in the list_dicts
+                f.write(Base.to_json_string(list_dicts))
+                # writes the to_json_string results directly to file
 
-        for item in list_objs:
-            list_dictionaries.append(item.__dict__)
-        filecontent += Base.to_json_string(list_dictionaries)
-        with open(filename, 'w', encoding="utf-8") as f:
-            # write a file directly.
-            # we will be converting to string via sef.to_json_string
-            f.write(filecontent)
