@@ -38,7 +38,7 @@ class Base:
 
         for item in list_objs:
             list_dictionaries.append(item.__dict__)
-        filecontent += cls.to_json_string(list_dictionaries)
+        filecontent += Base.to_json_string(list_dictionaries)
         with open(filename, 'w', encoding="utf-8") as f:
             # write a file directly.
             # we will be converting to string via sef.to_json_string
