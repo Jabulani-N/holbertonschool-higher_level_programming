@@ -2,6 +2,8 @@
 """ creates class Base"""
 
 import json
+
+
 class Base:
     """has attribute __nb_objects"""
 
