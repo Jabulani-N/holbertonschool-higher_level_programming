@@ -61,9 +61,9 @@ class Base:
         being incomplete. this code is fine.
         """
         if cls.__name__ == "Rectangle":
-            holder = cls (1, 1)
+            holder = cls(1, 1)
         else:
-            holder = cls (1)  # works for base and square
+            holder = cls(1)  # works for base and square
         holder.update(**dictionary)
         return holder
 
