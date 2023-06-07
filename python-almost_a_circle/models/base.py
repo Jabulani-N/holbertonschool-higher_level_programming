@@ -23,7 +23,7 @@ class Base:
     def to_json_string(list_dictionaries):
         """returns the JSON rep of list_dicitonaries
         unless it is empty/None, in wich caes return '[]'"""
-        if list_dictionaries is None or list_dictionaries == []:
+        if list_dictionaries == None or list_dictionaries == []:
             return "[]"
         return json.dumps(list_dictionaries)
 
