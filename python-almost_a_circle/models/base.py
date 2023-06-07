@@ -29,4 +29,7 @@ class Base:
         """recieves an object, and writes it to a file
         name the file {cls}.json
         """
-        pass
+        filename = cls.__name__ + ".json"
+        with open(filename, 'w', encoding="utf-8") as f:
+            json.dump(list_objs, f)  # dump will do the writing
+            # f is the text file object opened for writing
