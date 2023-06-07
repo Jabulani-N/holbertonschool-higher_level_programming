@@ -55,6 +55,10 @@ class Base:
         """creates an instance from a dictionary
         cls will be one of the base family
         cls.__name__ gives the type
+        returns newly created instance
+
+        known issue: fails due to square.update
+        being incomplete. this code is fine.
         """
         if cls.__name__ == "Rectangle":
             holder = cls (1, 1)
@@ -62,3 +66,11 @@ class Base:
             holder = cls (1)  # works for base and square
         holder.update(**dictionary)
         return holder
+
+    @classmethod
+    def load_from_file(cls):
+        """returns a list of instances stored in json file
+        file is named cls.json
+        cls is the calling class.
+        direct use of cls.__name__ should find the name
+        """
