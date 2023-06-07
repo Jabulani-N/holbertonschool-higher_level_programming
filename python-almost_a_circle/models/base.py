@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ creates class Base"""
 
-
+import json
 class Base:
     """has attribute __nb_objects"""
 
@@ -16,3 +16,17 @@ class Base:
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
+
+    @staticmethod
+    def to_json_string(list_dictionaries):
+        """returns the JSON rep of list_dicitonaries
+        unless it is empty/None, in wich caes return '[]'"""
+        if list_dictionaries is None or list_dictionaries == []:
+            return "[]"
+        return json.dumps(list_dictionaries)
+
+    def save_to_file(cls, list_objs):
+        """recieves an object, and writes it to a file
+        name the file {cls}.json
+        """
+        pass
