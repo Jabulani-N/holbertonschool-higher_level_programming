@@ -74,3 +74,10 @@ class Base:
         cls is the calling class.
         direct use of cls.__name__ should find the name
         """
+        filename = cls.__name__ + ".json"
+        try:
+            with open(filename, "r", encoding='utf-8') as f:
+                list_dicts = cls.from_json_string(f.read())
+                return [cls.create(**d) for d in list_dicts]
+        except FileNotFoundError:
+            return []
