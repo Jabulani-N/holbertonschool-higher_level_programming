@@ -42,3 +42,10 @@ class Base:
                 # puts that diciotnary in the list_dicts
                 f.write(Base.to_json_string(list_dicts))
                 # writes the to_json_string results directly to file
+
+    @staticmethod
+    def from_json_string(json_string):
+        """converts a json string into a dictionary"""
+        if json_string is None or json_string == "":
+            return []
+        return json.loads(json_string)
