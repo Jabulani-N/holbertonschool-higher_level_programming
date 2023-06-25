@@ -41,6 +41,17 @@ $<br>
         </code>
 </details>
 
+<details>
+    <summary>
+        To run the example test operations on your terminal within the container
+    </summary>
+    run
+    <code>
+service mysql start
+    </code>
+
+your password will be "Database"
+</details>
 
 ## Task1 - create database if it does not already exist
 
