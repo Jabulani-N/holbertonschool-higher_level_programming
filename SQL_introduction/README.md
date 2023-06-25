@@ -41,3 +41,8 @@ $<br>
         </code>
 </details>
 
+
+## Task1 - create database if it does not already exist
+
+[conditional actions](https://stackoverflow.com/questions/19088368/conditionally-create-stored-procedure-using-tsql)
+
