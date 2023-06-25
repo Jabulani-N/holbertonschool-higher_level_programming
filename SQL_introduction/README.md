@@ -1,5 +1,7 @@
 # SQL - Introduction
 
+This project utilizes **MySQL**
+
 All SQL Queries must start with a comment just above
 
 <details>
@@ -80,7 +82,7 @@ database creationo and conditional actions
 
 ## Task3 - List Tables
 
-#### Write a script that lists all the tables of a database in your MySQL server.
+**Write a script that lists all the tables of a database in your MySQL server.**
 
 <details>
     <summary>
