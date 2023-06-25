@@ -1,2 +1,2 @@
--- Creartes a database in the SQL server if it does not already exist
-DROP database IF EXISTS hbtn_0c_0
+-- takes the input argument database name, and lists all of it's tables
+SHOW tables FROM $1
