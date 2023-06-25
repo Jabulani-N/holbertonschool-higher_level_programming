@@ -51,6 +51,15 @@ service mysql start
     </code>
 
 your password will be "Database"
+
+    <details>
+        <summary>
+            Example test
+        </summary>
+        <code>
+cat 0-list_databases.sql | mysql -uroot -p
+        </code>
+    </details>
 </details>
 
 ## Task1 - create database if it does not already exist
