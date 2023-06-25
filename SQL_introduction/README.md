@@ -59,6 +59,9 @@ your password will be "Database"
     <code>cat 0-list_databases.sql | mysql -uroot -p</code>
 </details>
 
+* [MySQL Cheat Sheet](https://intellipaat.com/mediaFiles/2019/02/SQL-Commands-Cheat-Sheet.pdf?US)
+
+* [SQL Query Structure](https://web.csulb.edu/colleges/coe/cecs/dbdesign/dbdesign.php?page=sql/queries.php)
 ## Task1 - create database if it does not already exist
 
 database creationo and conditional actions
