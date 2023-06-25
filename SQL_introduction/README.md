@@ -69,15 +69,15 @@ your password will be "Database"
     <summary>
         Some terminology around relational databases
     </summary>
-    One good thing about relational databases is that whether they’re PostgreSQL, MySQL, Oracle, or other, they’ve managed to be pretty consistent across brands. Therefore, not only are their versions of SQL pretty decently similar (at least for CRUD operations), but the terminology they’re using are mostly the same.<br>
+One good thing about relational databases is that whether they’re PostgreSQL, MySQL, Oracle, or other, they’ve managed to be pretty consistent across brands. Therefore, not only are their versions of SQL pretty decently similar (at least for CRUD operations), but the terminology they’re using are mostly the same.<br>
 
-    Say you need to store users. To do that, you create a table that is called “users”.<br>
+Say you need to store users. To do that, you create a table that is called “users”.<br>
 
-    Your users have 3 pieces of information to store: their “id”, their “login”, and their “password”. Those are called columns, and they all have types, like integer for the “id”, varchar(32) for “login” (a string of variable length, but maximum 32), and char(32) (a string of exactly 32 characters, which is the case for all text encrypted with the md5 algorithm, for instance). The available types may vary heavily from one database “brand” to the other.<br>
+Your users have 3 pieces of information to store: their “id”, their “login”, and their “password”. Those are called columns, and they all have types, like integer for the “id”, varchar(32) for “login” (a string of variable length, but maximum 32), and char(32) (a string of exactly 32 characters, which is the case for all text encrypted with the md5 algorithm, for instance). The available types may vary heavily from one database “brand” to the other.<br>
 
-    Now, let’s add a user in the database with SQL:<br>
-    <code>INSERT INTO users (login, password) VALUES ('rudy','01234567890123456789012345678901');</code><br>
-    This adds a row in the table (sometimes also refered to as a record, or more rarely, a tuple).
+Now, let’s add a user in the database with SQL:<br>
+<code>INSERT INTO users (login, password) VALUES ('rudy','01234567890123456789012345678901');</code><br>
+This adds a row in the table (sometimes also refered to as a record, or more rarely, a tuple).
 </details>
 
 <details>
