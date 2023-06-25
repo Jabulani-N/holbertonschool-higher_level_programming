@@ -61,5 +61,16 @@ your password will be "Database"
 
 ## Task1 - create database if it does not already exist
 
-[conditional actions](https://stackoverflow.com/questions/19088368/conditionally-create-stored-procedure-using-tsql)
+database creationo and conditional actions
 
+*database creation*
+
+`CREATE database databaseName`
+
+*with conditional*
+
+`CREATE database IF NOT EXISTS databaseName`
+
+## Task2 - Database deletion
+
+`DROP` is used to remove databases
