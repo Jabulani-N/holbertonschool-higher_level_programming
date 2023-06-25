@@ -77,3 +77,16 @@ database creationo and conditional actions
 ## Task2 - Database deletion
 
 `DROP` is used to remove databases
+
+## Task3 - List Tables
+
+#### Write a script that lists all the tables of a database in your MySQL server.
+
+<details>
+    <summary>
+        Hint
+    </summary>
+The reason you probably can't find the command to get it to take an input command is that it doesn't need you to give it one.
+</details>
+
+
