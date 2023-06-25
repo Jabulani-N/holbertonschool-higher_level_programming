@@ -84,34 +84,34 @@ your password will be "Database"
     <summary>
         Some more terminology around relational databases
     </summary>
-    **Indexes**<br>
-    Say you want to get all of the comments that are attached to the post of ID 12:<br>
+**Indexes**<br>
+Say you want to get all of the comments that are attached to the post of ID 12:<br>
 
-    <code>SELECT * FROM comments WHERE post_id=12;</code><br>
+<code>SELECT * FROM comments WHERE post_id=12;</code><br>
 
-    If you have millions or billions of comments, having your database extract the comments that match this condition can be amazingly time-consuming. Therefore, you can add an index on the comments table, that applies to the post_id column. This will “precompute” every possible SELECT query with WHERE conditions on this column, which will update themselves every time you modify data, so that those calls are ready to respond very quickly.<br>
+If you have millions or billions of comments, having your database extract the comments that match this condition can be amazingly time-consuming. Therefore, you can add an index on the comments table, that applies to the post_id column. This will “precompute” every possible SELECT query with WHERE conditions on this column, which will update themselves every time you modify data, so that those calls are ready to respond very quickly.<br>
 
-    Let’s complicate things a bit, and say you want to optimize this query:<br>
+Let’s complicate things a bit, and say you want to optimize this query:<br>
 
-    <code>SELECT * FROM comments WHERE post_id=12 AND published=1;</code><br>
+<code>SELECT * FROM comments WHERE post_id=12 AND published=1;</code><br>
 
-    Your index on the post_id column might not help much on that query. However, for that query, you can absolutely define an index on multiple column (in this case, the columns post_id and published).
+Your index on the post_id column might not help much on that query. However, for that query, you can absolutely define an index on multiple column (in this case, the columns post_id and published).
 
 Setting indexes properly is a known quick win to improve performance of relational databases on queries that are performed very often and take a long time to respond (so-called slow queries). I can quote at least a dozen occurrences in my career where setting up an index properly boosted a database’s performance with minimal effort, the most notable of which allowed us to boost a data migration that was taking ~48 hours, to suddenly complete in about 3 hours.<br>
 
-    **Joins**<br>
+**Joins**<br>
 
-    You can join tables together that have relations between each other, so that you can operate on data across those tables. For instance, I want the titles of all posts that have published comments.<br>
+You can join tables together that have relations between each other, so that you can operate on data across those tables. For instance, I want the titles of all posts that have published comments.<br>
 
-    You can join tables together that have relations between each other, so that you can operate on data across those tables. For instance, I want the titles of all posts that have published comments.<br>
+You can join tables together that have relations between each other, so that you can operate on data across those tables. For instance, I want the titles of all posts that have published comments.<br>
 
-    <code>SELECT posts.title FROM posts JOIN comments ON posts.id = comments.post_id WHERE comments.published=1;</code><br>
+<code>SELECT posts.title FROM posts JOIN comments ON posts.id = comments.post_id WHERE comments.published=1;</code><br>
 
-    (Note: each post on that query will appear as many times as it has comments, but let’s focus on the join for now.)<br>
+(Note: each post on that query will appear as many times as it has comments, but let’s focus on the join for now.)<br>
 
-    Performance is dramatically better if you manage to get the database to do most of the work, as opposed to your application, because the database knows most about your data and how to handle it most efficiently. Joins are amazing wins for that, because the other way to get it done is to perform many separate SQL queries, and manipulate that data in your code, which is very inefficient.<br>
+Performance is dramatically better if you manage to get the database to do most of the work, as opposed to your application, because the database knows most about your data and how to handle it most efficiently. Joins are amazing wins for that, because the other way to get it done is to perform many separate SQL queries, and manipulate that data in your code, which is very inefficient.<br>
 
-    Note: you can join tables together across many relations. The largest join in my career was 7-fold, in a database at Apple that contained information about localization projects.<br>
+Note: you can join tables together across many relations. The largest join in my career was 7-fold, in a database at Apple that contained information about localization projects.<br>
 </details>
 
 ## Task1 - create database if it does not already exist
