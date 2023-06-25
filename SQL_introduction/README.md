@@ -38,7 +38,7 @@ mysql><br>
 mysql> quit<br>
 Bye<br>
 $<br>
-        </code>
+</code>
 </details>
 
 <details>
@@ -46,20 +46,17 @@ $<br>
         To run the example test operations on your terminal within the container
     </summary>
     run
-    <code>
-service mysql start
-    </code>
+    <code>service mysql start</code>
 
 your password will be "Database"
 
-    <details>
-        <summary>
-            Example test
-        </summary>
-        <code>
-cat 0-list_databases.sql | mysql -uroot -p
-        </code>
-    </details>
+
+</details>
+<details>
+    <summary>
+        Example test
+    </summary>
+    <code>cat 0-list_databases.sql | mysql -uroot -p</code>
 </details>
 
 ## Task1 - create database if it does not already exist
