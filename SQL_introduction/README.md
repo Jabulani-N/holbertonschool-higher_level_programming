@@ -82,6 +82,8 @@ database creationo and conditional actions
 
 ## Task3 - List Tables
 
+* The database name will be passed as argument of mysql command (in the following example: mysql is the name of the database)
+
 **Write a script that lists all the tables of a database in your MySQL server.**
 
 <details>
