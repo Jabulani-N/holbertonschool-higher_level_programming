@@ -1,5 +1,7 @@
 # SQL - Introduction
 
+All SQL Queries must start with a comment just above
+
 <details>
     <summary>
         Install MySQL 8.0 on Ubuntu 20.04 LTS
