@@ -160,3 +160,6 @@ When we actually build the database, each relation scheme becomes the structure 
        phone      VARCHAR(20) NOT NULL,
        street     VARCHAR(50),
        zipcode    VARCHAR(5));
+
+In this example, VARCHAR is a datatype in SQL databases that state the values of the column are variable-length character string of no more than the number of characters in parentheses. Consult your own system documentation for supported data types. We will explain the extra keyword NOT NULL when we look at rows and tables.
+
