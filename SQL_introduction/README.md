@@ -220,3 +220,10 @@ In this example, VARCHAR is a datatype in SQL databases that state the values of
 **testing**
 
 `cat 6-list_values.sql | mysql -hlocalhost -uroot -p hbtn_0c_0` (no response on success)
+
+## Task7 -  Insertion
+
+[insertion](https://www.w3schools.com/sql/sql_insert.asp)
+
+**testing**
+
