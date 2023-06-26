@@ -227,7 +227,7 @@ In this example, VARCHAR is a datatype in SQL databases that state the values of
 
 `cat 7-insert_value.sql | mysql -hlocalhost -uroot -p hbtn_0c_0;cat 6-list_values.sql | mysql -hlocalhost -uroot -p hbtn_0c_0` this will show the current status after having run your code
 
-## Task7
+## Task8
 
 See: [SQL Count](https://www.w3schools.com/sql/sql_count_avg_sum.asp)
 
@@ -237,3 +237,11 @@ See: [SQL Count](https://www.w3schools.com/sql/sql_count_avg_sum.asp)
 
 you can omit the `| tail -1` for more understandable results
 
+
+## Task9
+
+[you can add multiple rows to a table simultaneously](https://stackoverflow.com/questions/452859/inserting-multiple-rows-in-a-single-sql-query)
+
+**testing**
+
+`cat 9-full_creation.sql | mysql -hlocalhost -uroot -p hbtn_0c_0;`I created a modified task6, `6b-list_values_second_table.sql`, to display the table second_table created in this task. ti is in this project directory. to use it in testing, append `cat 6b-list_values_second_table.sql | mysql -hlocalhost -uroot -p hbtn_0c_0` to the first set of code. It will display your resultant table.
