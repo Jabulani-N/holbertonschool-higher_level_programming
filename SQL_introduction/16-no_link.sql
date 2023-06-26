@@ -5,5 +5,6 @@
 SELECT score, name
 FROM second_table
 WHERE EXISTS
-(SELECT name FROM second_table WHERE name IS NOT NULL)
+(SELECT name FROM second_table)
+WHERE name IS NOT NULL
 ORDER BY score DESC;
