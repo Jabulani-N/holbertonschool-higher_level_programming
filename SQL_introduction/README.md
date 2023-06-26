@@ -270,3 +270,12 @@ it wants all results. not just like 3 as the task shows. if you've made your tab
 the syntax seems to be
 
 `SELECT columnName1,columnName2,... FROM database WHERE columNameXcondition ORDER BY columnNameY DESC` (DESC is for descending order. omit for ascending order)
+
+**testing**
+
+`cat 11-best_score.sql | mysql -hlocalhost -uroot -p hbtn_0c_0`
+
+## Task 12
+
+Update: https://www.w3schools.com/sql/sql_update.asp
+
