@@ -32,23 +32,23 @@ How do you list all users records with age > 21 in this table?
     <summary>
         Connect to your MySQL server:
     </summary>
-        <code>$ sudo mysql <br>
-Welcome to the MySQL monitor.  Commands end with ; or \g.<br>
-Your MySQL connection id is 11<br>
+    $ sudo mysql
+    Welcome to the MySQL monitor.  Commands end with ; or \g.
+    Your MySQL connection id is 11
 Server version: 8.0.25-0ubuntu0.20.04.1 (Ubuntu)<br>
 
-Copyright (c) 2000, 2021, Oracle and/or its affiliates.<br>
+    Copyright (c) 2000, 2021, Oracle and/or its affiliates.
 
-Oracle is a registered trademark of Oracle Corporation and/or its<br>
-affiliates. Other names may be trademarks of their respective<br>
-owners.<br>
+    Oracle is a registered trademark of Oracle Corporation and/or its
+    affiliates. Other names may be trademarks of their respective
+    owners.
 
-Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.<br>
+    Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
-mysql><br>
-mysql> quit<br>
-Bye<br>
-$</code>
+    mysql>
+    mysql> quit
+    Bye
+    $
 </details>
 
 <details>
