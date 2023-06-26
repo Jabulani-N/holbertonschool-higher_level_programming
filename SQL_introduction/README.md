@@ -293,3 +293,13 @@ Row Deletion: https://www.w3schools.com/sql/sql_delete.asp
 
 `cat 13-change_class.sql | mysql -hlocalhost -uroot -p hbtn_0c_0;cat 10-top_score.sql | mysql -hlocalhost -uroot -p hbtn_0c_0`
 
+## task14
+
+Ali**as**: changing displayed column name: https://www.w3schools.com/sql/sql_alias.asp
+
+average is discussed in the [count page](https://www.w3schools.com/sql/sql_count_avg_sum.asp)
+
+**testing**
+
+`cat 14-average.sql | mysql -hlocalhost -uroot -p hbtn_0c_0`
+
