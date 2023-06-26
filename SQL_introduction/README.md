@@ -50,7 +50,8 @@ $<br>
     run
     <code>service mysql start</code>
 
-your password will be "Database"
+your password can be skipped (Enter key) through
+
 </details>
 
 <details>
@@ -130,9 +131,22 @@ database creationo and conditional actions
 
 `CREATE database IF NOT EXISTS databaseName`
 
+**Testing**
+
+`cat 0-list_databases.sql | mysql -hlocalhost -uroot -p`
+
+
+
 ## Task2 - Database deletion
 
 `DROP` is used to remove databases
+
+**Testing**
+
+`cat 1-create_database_if_missing.sql | mysql -hlocalhost -uroot -p`
+
+`cat 0-list_databases.sql | mysql -hlocalhost -uroot -p`
+
 
 ## Task3 - List Tables
 
@@ -146,6 +160,15 @@ database creationo and conditional actions
     </summary>
 The reason you probably can't find the command to get it to take an input command is that it doesn't need you to give it one.
 </details>
+
+**Testing**
+
+`cat 0-list_databases.sql | mysql -hlocalhost -uroot -p`
+
+
+`cat 2-remove_database.sql | mysql -hlocalhost -uroot -p`
+
+`cat 0-list_databases.sql | mysql -hlocalhost -uroot -p`
 
 
 ## Task4 - First Table
@@ -166,4 +189,10 @@ When we actually build the database, each relation scheme becomes the structure 
        zipcode    VARCHAR(5));
 
 In this example, VARCHAR is a datatype in SQL databases that state the values of the column are variable-length character string of no more than the number of characters in parentheses. Consult your own system documentation for supported data types. We will explain the extra keyword NOT NULL when we look at rows and tables.
+
+**Testing**
+
+`cat 4-first_table.sql | mysql -hlocalhost -uroot -p hbtn_0c_0`
+
+`cat 3-list_tables.sql | mysql -hlocalhost -uroot -p hbtn_0c_0`
 
