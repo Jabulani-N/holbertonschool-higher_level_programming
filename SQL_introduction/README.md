@@ -205,7 +205,9 @@ In this example, VARCHAR is a datatype in SQL databases that state the values of
 
 `cat 3-list_tables.sql | mysql -hlocalhost -uroot -p hbtn_0c_0`
 
-$$ Task5
+## Task5
+
+[resource explaining/demonstrating the answer](https://www.w3resource.com/mysql/mysql-show.php#CREATE-TABLE)
 
 **Testing**
 
