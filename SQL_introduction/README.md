@@ -252,6 +252,10 @@ you can omit the `| tail -1` for more understandable results
 order by: https://www.w3schools.com/sql/sql_orderby.asp
 
 
+### Potential Pitfall
+
+it wants all results. not just like 3 as the task shows. if you've made your table massive and full of repeats by repeatedly using task 9, a correct task10 will return a massive number of entries and with repeats.
+
 <details>
     <summary>
         Hint
@@ -260,3 +264,6 @@ order by: https://www.w3schools.com/sql/sql_orderby.asp
             you are selecting (viewing) both <code>score, name</code>.
         </p>
 </details>
+
+## Task 11
+
