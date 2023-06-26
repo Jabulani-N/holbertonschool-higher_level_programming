@@ -288,3 +288,8 @@ Update: https://www.w3schools.com/sql/sql_update.asp
 "Fail and face erasure"
 
 Deletion: https://www.w3schools.com/sql/sql_delete.asp
+
+**testing**
+
+`cat 13-change_class.sql | mysql -hlocalhost -uroot -p hbtn_0c_0;cat 10-top_score.sql | mysql -hlocalhost -uroot -p hbtn_0c_0`
+

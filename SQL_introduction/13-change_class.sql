@@ -1,4 +1,3 @@
 -- script that removes all records with a score <= 5 in the table second_table
-UPDATE second_table
-SET score=10
-WHERE name = 'Bob' -- not updated from task12 yet
+DELETE FROM second_table
+WHERE score <= 5;
