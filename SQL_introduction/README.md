@@ -257,6 +257,6 @@ order by: https://www.w3schools.com/sql/sql_orderby.asp
         Hint
     </summary>
         <p>
-            you are selecting (viewing) both score and name.
+            you are selecting (viewing) both `score, name`.
         </p>
 </details>
