@@ -1,7 +1,9 @@
--- script that lists all records with a score >= 10 in the table second_table
+-- script that lists all records of the table second_table
 -- score, name associated with it.
 -- in order of highest score at top; lowest at bottom.
+-- ignore entries without a name
 SELECT score, name
 FROM second_table
-WHERE score >= 10
-ORDER BY score DESC; -- not changed from task11 yet
+WHERE EXISTS
+(SELECT name FROM second_table)
+ORDER BY score DESC;
