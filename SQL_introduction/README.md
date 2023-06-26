@@ -32,10 +32,11 @@ How do you list all users records with age > 21 in this table?
     <summary>
         Connect to your MySQL server:
     </summary>
+
     $ sudo mysql
     Welcome to the MySQL monitor.  Commands end with ; or \g.
     Your MySQL connection id is 11
-Server version: 8.0.25-0ubuntu0.20.04.1 (Ubuntu)<br>
+    Server version: 8.0.25-0ubuntu0.20.04.1 (Ubuntu)
 
     Copyright (c) 2000, 2021, Oracle and/or its affiliates.
 
