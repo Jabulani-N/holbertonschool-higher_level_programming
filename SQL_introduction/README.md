@@ -229,4 +229,7 @@ In this example, VARCHAR is a datatype in SQL databases that state the values of
 
 `cat 7-insert_value.sql | mysql -hlocalhost -uroot -p hbtn_0c_0;cat 6-list_values.sql | mysql -hlocalhost -uroot -p hbtn_0c_0` this will show the current status after having run your code
 
-``
+## Task7
+
+See: [SQL Count](https://www.w3schools.com/sql/sql_count_avg_sum.asp)
+
