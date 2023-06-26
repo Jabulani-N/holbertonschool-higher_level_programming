@@ -1,2 +1,5 @@
--- takes the input argument database name, and lists all of it's tables
-SHOW tables
+-- makes a table named after input argument. does nothing if it alraedy exists
+CREATE table IF NOT EXISTS first_table (
+id INT,
+name VARCHAR(256),
+)
