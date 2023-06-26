@@ -32,8 +32,7 @@ How do you list all users records with age > 21 in this table?
     <summary>
         Connect to your MySQL server:
     </summary>
-        <code>
-$ sudo mysql <br>
+        <code>$ sudo mysql <br>
 Welcome to the MySQL monitor.  Commands end with ; or \g.<br>
 Your MySQL connection id is 11<br>
 Server version: 8.0.25-0ubuntu0.20.04.1 (Ubuntu)<br>
@@ -49,8 +48,7 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.<b
 mysql><br>
 mysql> quit<br>
 Bye<br>
-$<br>
-</code>
+$</code>
 </details>
 
 <details>
@@ -206,3 +204,8 @@ In this example, VARCHAR is a datatype in SQL databases that state the values of
 
 `cat 3-list_tables.sql | mysql -hlocalhost -uroot -p hbtn_0c_0`
 
+$$ Task5
+
+**Testing**
+
+`cat 5-full_table.sql | mysql -hlocalhost -uroot -p hbtn_0c_0`
