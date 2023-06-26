@@ -245,3 +245,18 @@ you can omit the `| tail -1` for more understandable results
 **testing**
 
 `cat 9-full_creation.sql | mysql -hlocalhost -uroot -p hbtn_0c_0;`I created a modified task6, `6b-list_values_second_table.sql`, to display the table second_table created in this task. ti is in this project directory. to use it in testing, append `cat 6b-list_values_second_table.sql | mysql -hlocalhost -uroot -p hbtn_0c_0` to the first set of code. It will display your resultant table.
+
+
+## Task10
+
+order by: https://www.w3schools.com/sql/sql_orderby.asp
+
+
+<details>
+    <summary>
+        Hint
+    </summary>
+        <p>
+            you are selecting (viewing) both score and name.
+        </p>
+</details>
