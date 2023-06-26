@@ -287,7 +287,7 @@ Update: https://www.w3schools.com/sql/sql_update.asp
 
 "Fail and face erasure"
 
-Deletion: https://www.w3schools.com/sql/sql_delete.asp
+Row Deletion: https://www.w3schools.com/sql/sql_delete.asp
 
 **testing**
 
