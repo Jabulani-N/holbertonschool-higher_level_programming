@@ -315,3 +315,14 @@ explanation of Group By: https://www.w3schools.com/sql/sql_groupby.asp
 
 `cat 15-groups.sql | mysql -hlocalhost -uroot -p hbtn_0c_0`
 
+## Task16
+
+"The new plan is the old plan."
+
+Exists: https://www.w3schools.com/sql/sql_exists.asp
+
+* slightly more advanced usage than we began this project with.
+
+**testing**
+
+``
