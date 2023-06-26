@@ -4,6 +4,16 @@ This project utilizes **MySQL**
 
 All SQL Queries must start with a comment just above
 
+**Noteworthy quiz questions**
+
+How do you change the name of the users record with id = 89 to Holberton?
+
+`UPDATE users SET name = “Holberton” WHERE id = 89;`
+
+How do you list all users records with age > 21 in this table?
+
+`SELECT * FROM users WHERE age > 21;`
+
 <details>
     <summary>
         Install MySQL 8.0 on Ubuntu 20.04 LTS
