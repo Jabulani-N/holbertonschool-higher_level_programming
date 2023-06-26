@@ -1,4 +1,5 @@
--- script that displays the number of records with id = 89 in the table first_table
-SELECT COUNT(id)
-FROM first_table
-WHERE id = 89; -- not yet altered form task8
+-- script that lists the number of records with the same score in the table second_table
+SELECT score, COUNT(score) AS "number"
+FROM second_table
+GROUP BY score
+ORDER BY score DESC;

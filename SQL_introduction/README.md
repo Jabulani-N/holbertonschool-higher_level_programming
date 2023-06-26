@@ -305,6 +305,13 @@ average is discussed in the [count page](https://www.w3schools.com/sql/sql_count
 
 ## task15
 
+counting, for dupes: https://stackoverflow.com/questions/2594829/finding-duplicate-values-in-a-sql-table
+
+* in particular, see the answer that has the phrase `name,email, COUNT(*) AS CountOf`. it's the second one, as of 2023 June 26
+
+explanation of Group By: https://www.w3schools.com/sql/sql_groupby.asp
+
 **testing**
 
-``
+`cat 15-groups.sql | mysql -hlocalhost -uroot -p hbtn_0c_0`
+
