@@ -144,3 +144,19 @@ The reason you probably can't find the command to get it to take an input comman
 </details>
 
 
+## Task4 - First Table
+
+Exerpt from https://web.csulb.edu/colleges/coe/cecs/dbdesign/dbdesign.php?page=class.php
+
+**Table structure in SQL**
+
+When we actually build the database, each relation scheme becomes the structure for one table. The SQL syntax for creating the table includes a data type for each attribute, which is needed for the database but a data type is not the same as the domain of the attribute.
+
+**Example: customers table**
+
+    CREATE TABLE customers (
+       first_name VARCHAR(20) NOT NULL,
+       last_name  VARCHAR(20) NOT NULL,
+       phone      VARCHAR(20) NOT NULL,
+       street     VARCHAR(50),
+       zipcode    VARCHAR(5));
