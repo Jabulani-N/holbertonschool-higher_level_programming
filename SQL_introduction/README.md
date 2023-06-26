@@ -65,6 +65,10 @@ your password will be "Database"
 * [SQL Query Structure](https://web.csulb.edu/colleges/coe/cecs/dbdesign/dbdesign.php?page=sql/queries.php)
 </details>
 
+## Resources and Reference
+
+[w3schools](https://www.w3schools.com/sql/sql_exists.asp) has many examples of commands, keywords, and use cases.
+
 <details>
     <summary>
         Some terminology around relational databases
