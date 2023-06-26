@@ -9,14 +9,12 @@ All SQL Queries must start with a comment just above
     <summary>
         Install MySQL 8.0 on Ubuntu 20.04 LTS
     </summary>
-    <code>
-        $ sudo apt update<br>
-        $ sudo apt install mysql-server<br>
-        ...<br>
-        $ mysql --version<br>
-        mysql  Ver 8.0.25-0ubuntu0.20.04.1 for Linux on x86_64 ((Ubuntu))<br>
-        $<br>
-    </code>
+        $ sudo apt update
+        $ sudo apt install mysql-server
+        ...
+        $ mysql --version
+        mysql  Ver 8.0.25-0ubuntu0.20.04.1 for Linux on x86_64 ((Ubuntu))
+        $
 </details>
 
 <details>
