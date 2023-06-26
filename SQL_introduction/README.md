@@ -212,3 +212,9 @@ In this example, VARCHAR is a datatype in SQL databases that state the values of
 **Testing**
 
 `cat 5-full_table.sql | mysql -hlocalhost -uroot -p hbtn_0c_0`
+
+## Task 6
+
+**testing**
+
+`cat 6-list_values.sql | mysql -hlocalhost -uroot -p hbtn_0c_0` (no response on success)
