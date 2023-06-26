@@ -233,3 +233,9 @@ In this example, VARCHAR is a datatype in SQL databases that state the values of
 
 See: [SQL Count](https://www.w3schools.com/sql/sql_count_avg_sum.asp)
 
+**testing**
+
+`cat 8-count_89.sql | mysql -hlocalhost -uroot -p hbtn_0c_0 | tail -1` shows just the number.
+
+you can omit the `| tail -1` for more understandable results
+
