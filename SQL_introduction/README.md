@@ -284,3 +284,7 @@ Update: https://www.w3schools.com/sql/sql_update.asp
 `cat 12-no_cheating.sql | mysql -hlocalhost -uroot -p hbtn_0c_0;cat 10-top_score.sql | mysql -hlocalhost -uroot -p hbtn_0c_0`
 
 ## task13
+
+"Fail and face erasure"
+
+Deletion: https://www.w3schools.com/sql/sql_delete.asp
