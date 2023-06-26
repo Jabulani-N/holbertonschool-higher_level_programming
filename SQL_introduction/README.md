@@ -267,3 +267,6 @@ it wants all results. not just like 3 as the task shows. if you've made your tab
 
 ## Task 11
 
+the syntax seems to be
+
+`SELECT columnName1,columnName2,... FROM database WHERE columNameXcondition ORDER BY columnNameY DESC` (DESC is for descending order. omit for ascending order)
