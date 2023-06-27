@@ -59,3 +59,19 @@ you can use `SHOW GRANTS` on a user to see their permissions
 ## Task1
 
 article on creating users and granthing them permissions: https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql
+
+
+
+<details>
+    <summary>
+        syntax hint
+    </summary>
+    <code>DO SOMETHING IF CONDITION details of the something to do;</code>
+</details>
+
+<details>
+    <summary>
+        syntax answer
+    </summary>
+    <code>CREATE USER IF NOT exists 'username' IDENTIFIED WITH mysql_native_password BY 'password';</code>
+</details>
