@@ -75,3 +75,10 @@ article on creating users and granthing them permissions: https://www.digitaloce
     </summary>
     <code>CREATE USER IF NOT exists 'username' IDENTIFIED WITH mysql_native_password BY 'password';</code>
 </details>
+
+**testing**
+
+`cat 1-create_user.sql | mysql -hlocalhost -uroot -p;cat 0-privileges.sql | mysql -hlocalhost -uroot -p`
+
+* successful code will fill the terminal with a spam of words, prefaced by <mark>Grants for user_0d_1@localhost</mark>
+
