@@ -41,6 +41,17 @@ All SQL Queries must start with a comment just above
     $
 </details>
 
+<details>
+    <summary>
+        To run the example test operations on your terminal within the container
+    </summary>
+    run
+    <code>service mysql start</code>
+
+your password can be skipped (Enter key) through
+
+</details>
+
 ## Task0 -
 
 you can use `SHOW GRANTS` on a user to see their permissions
