@@ -56,7 +56,7 @@ your password can be skipped (Enter key) through
 
 you can use `SHOW GRANTS` on a user to see their permissions
 
-## Task1
+## Task1 - Root user
 
 article on creating users and granthing them permissions: https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql
 
