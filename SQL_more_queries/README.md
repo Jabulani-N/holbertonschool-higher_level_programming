@@ -1,7 +1,5 @@
 # SQL - More queries
 
-FLUSH might the the command for the first question
-
 This project utilizes **MySQL**
 
 All SQL Queries must start with a comment just above
@@ -42,3 +40,7 @@ All SQL Queries must start with a comment just above
     Bye
     $
 </details>
+
+## Task0 -
+
+you can use `SHOW GRANTS` on a user to see their permissions
