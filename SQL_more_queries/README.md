@@ -1,5 +1,11 @@
 # SQL - More queries
 
+As of 2023 June 27, these files may not run correctly, depending on SQL version installed. Ubuntu 14.14 systems will fail where Ubuntu 20.04 systems succeed.
+
+## Potemtial pitfalls
+
+*There is no such things as `exists`. The keyword is `EXISTS`
+
 This project utilizes **MySQL**
 
 All SQL Queries must start with a comment just above
@@ -82,3 +88,10 @@ article on creating users and granthing them permissions: https://www.digitaloce
 
 * successful code will fill the terminal with a spam of words, prefaced by <mark>Grants for user_0d_1@localhost</mark>
 
+## Task2
+
+changing permissions syntax
+
+* `GRANT/REVOKE PRIVILEGEnAME ON SERVERnAME.SERVERcONTENT TO/FROM USERnAME`
+
+* * `ALL PRIVILEGES` is a valid privilege name, for affecting all privileges.
