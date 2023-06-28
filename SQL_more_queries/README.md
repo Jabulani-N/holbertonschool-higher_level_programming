@@ -4,7 +4,8 @@ As of 2023 June 27, these files may not run correctly, depending on SQL version 
 
 ## Potemtial pitfalls
 
-*There is no such things as `exists`. The keyword is `EXISTS`
+* There is no such things as `exists`. The keyword is `EXISTS`
+* * need review
 
 This project utilizes **MySQL**
 
