@@ -96,3 +96,7 @@ changing permissions syntax
 * `GRANT/REVOKE PRIVILEGEnAME ON SERVERnAME.SERVERcONTENT TO/FROM USERnAME`
 
 * * `ALL PRIVILEGES` is a valid privilege name, for affecting all privileges.
+
+**Testing**
+
+`cat 2-create_read_user.sql | mysql -hlocalhost -uroot -p;cat 0-privileges.sql | mysql -hlocalhost -uroot -p`
