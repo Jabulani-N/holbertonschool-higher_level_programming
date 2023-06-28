@@ -1,6 +1,6 @@
 # SQL - More queries
 
-As of 2023 June 27, these files may not run correctly, depending on SQL version installed. Ubuntu 14.14 systems will fail where Ubuntu 20.04 systems succeed.
+As of 2023 June 27, these files may not run correctly, depending on SQL version installed. Ubuntu 14.14 systems may fail where Ubuntu 20.04 systems succeed.
 
 ## Potemtial pitfalls
 
