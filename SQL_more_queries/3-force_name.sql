@@ -1,6 +1,7 @@
 -- script that creates the table force_name on your MySQL server
-DROP TABLE IF EXISTS force_name;
 CREATE TABLE IF NOT EXISTS force_name (
-    id INT UNIQUE,
+    id INT,
     name VARCHAR(256) NOT NULL
 );
+ALTER TABLE force_name
+DROP CONSTRAINT PK_id;
