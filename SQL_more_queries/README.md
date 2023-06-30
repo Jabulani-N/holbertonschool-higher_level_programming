@@ -53,7 +53,7 @@ All SQL Queries must start with a comment just above
         To run the example test operations on your terminal within the container
     </summary>
     run
-    <code>service mysql start</code>
+    <code>service mysql start</code><br>
 
 your password can be skipped (Enter key) through
 
