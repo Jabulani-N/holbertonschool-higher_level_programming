@@ -100,3 +100,9 @@ changing permissions syntax
 **Testing**
 
 `cat 2-create_read_user.sql | mysql -hlocalhost -uroot -p;cat 0-privileges.sql | mysql -hlocalhost -uroot -p`
+
+## TAsk 3
+
+**testing**
+
+`cat 3-force_name.sql | mysql -hlocalhost -uroot -p hbtn_0d_2;echo 'INSERT INTO force_name (id, name) VALUES (89, "Best School");' | mysql -hlocalhost -uroot -p hbtn_0d_2;echo 'SELECT * FROM force_name;' | mysql -hlocalhost -uroot -p hbtn_0d_2`
