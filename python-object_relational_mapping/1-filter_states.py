@@ -21,7 +21,8 @@ def filter_states():
 
     cur.execute(
                 "SELECT id, name FROM states WHERE\
-                 name LIKE \"N%\" ORDER BY id;"
+                 BINARY name \
+                 LIKE \"N%\" ORDER BY id;"
                )
 
     rows = cur.fetchall()

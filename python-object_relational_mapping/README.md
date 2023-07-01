@@ -160,3 +160,10 @@ SQL Wildcard characters: https://www.w3schools.com/sql/sql_wildcards.asp
 ### Potential Pitfall
 
 * Be sure to use the correct wildcard for the service. `Wildcard Characters in SQL Server` is **not** the first option.
+
+* Must be Case sensitive. `BINARY` is one way to do this. [Collate](https://stackoverflow.com/questions/14962419/is-the-like-operator-case-sensitive-with-sql-server) is another
+
+**testing**
+
+`cat tests/0-select_states.sql | mysql -uroot -p;./1-filter_states.py root root hbtn_0e_0_usa`
+
