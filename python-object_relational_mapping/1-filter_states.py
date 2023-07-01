@@ -32,4 +32,4 @@ def filter_states():
 
 
 if __name__ == '__main__':
-    fliter_states()
+    filter_states()
