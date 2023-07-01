@@ -112,3 +112,8 @@ changing permissions syntax
 **testing**\
 
 `cat 4-never_empty.sql | mysql -hlocalhost -uroot -p hbtn_0d_2;echo 'INSERT INTO id_not_null (id, name) VALUES (89, "Best School");' | mysql -hlocalhost -uroot -p hbtn_0d_2;echo 'INSERT INTO id_not_null (name) VALUES ("Best");' | mysql -hlocalhost -uroot -p hbtn_0d_2;echo 'SELECT * FROM id_not_null;' | mysql -hlocalhost -uroot -p hbtn_0d_2;`
+
+## task5
+
+**testing**
+
