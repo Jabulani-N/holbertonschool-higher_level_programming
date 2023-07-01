@@ -8,6 +8,11 @@ In the second part, you will use the module SQLAlchemy (don’t ask me how to pr
 
 The biggest difference is: no more SQL queries! Indeed, the purpose of an ORM is to abstract the storage to the usage. With an ORM, your biggest concern will be “What can I do with my objects” and not “How this object is stored? where? when?”. You won’t write any SQL queries only Python code. Last thing, your code won’t be “storage type” dependent. You will be able to change your storage easily without re-writing your entire project
 
+
+* Your files will be executed with MySQLdb version 2.0.x
+* Your files will be executed with SQLAlchemy version 1.4.x
+* All your files should end with a new line
+* The first line of all your files should be exactly #!/usr/bin/python3
 ----
 
 This project utilizes **MySQL**
