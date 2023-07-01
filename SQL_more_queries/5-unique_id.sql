@@ -1,5 +1,6 @@
--- Write a script that creates the table unique_id on your MySQL server.
-CREATE TABLE IF NOT EXISTS force_name (
+-- script that creates the table unique_id on your MySQL server.
+-- id INT with the default value 1 and must be unique
+CREATE TABLE IF NOT EXISTS unique_id (
     id INT DEFAULT 1 UNIQUE,
     name VARCHAR(256) NOT NULL
 );
