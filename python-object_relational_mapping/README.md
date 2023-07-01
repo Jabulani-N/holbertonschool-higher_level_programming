@@ -157,3 +157,6 @@ Cleanup - do this within the python file when you are done with the cursor and d
 
 SQL Wildcard characters: https://www.w3schools.com/sql/sql_wildcards.asp
 
+### Potential Pitfall
+
+* Be sure to use the correct wildcard for the service. `Wildcard Characters in SQL Server` is **not** the first option.
