@@ -152,3 +152,8 @@ Cleanup - do this within the python file when you are done with the cursor and d
 **testing**
 
 `cat tests/0-select_states.sql | mysql -uroot -p;./0-select_states.py root root hbtn_0e_0_usa`
+
+## Task1
+
+SQL Wildcard characters: https://www.w3schools.com/sql/sql_wildcards.asp
+
