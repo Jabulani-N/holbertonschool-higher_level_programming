@@ -104,3 +104,46 @@ your password can be skipped (Enter key) through
 
 </details>
 
+
+## task0
+
+[steps to getting to write SQL scripts in pyhton](https://www.mikusa.com/python-mysql-docs/connection.html)
+
+`import MySQLdb`
+
+Afterwards, define a function, and put this in it:
+
+`db = MySQLdb.connect(host=MY_HOST, user=MY_USER, passwd=MY_PASS, db=MY_DB)`
+
+* MY_HOST, MY_USER, MY_PASS, and MY_DB can be stirng variables, or actual string objects.
+
+next, you'll need to create a cursor:
+
+`cursorName = db.cursor()`
+
+now, you can use that cursor to execute SQL queries. For example:
+
+`cur.execute("CREATE TABLE song ( id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT, title TEXT NOT NULL )")`
+
+* Remember that SQL queries are one transaciton over one or multiple lines, and end with `;`. SQL doesn't see the newlines; it only sees and `;` as the end of a command.
+
+finish with
+
+```
+if __name__ == '__main__':
+    function_name()
+```
+
+Example insert:
+
+    songs = ('Purple Haze', 'All Along the Watch Tower', 'Foxy Lady')
+    for song in songs:
+        cur.execute("INSERT INTO song (title) VALUES (%s)", song)
+        print "Auto Increment ID: %s" % cur.lastrowid
+
+Cleanup
+
+    # Close all cursors
+    cur.close()
+    # Close all databases
+    db.close()
