@@ -56,6 +56,45 @@ This project utilizes **MySQL**
 
 <details>
     <summary>
+        Install <code>MySQLdb</code> module version <code>2.0.x</code>
+    </summary>
+For installing MySQLdb, you need to have MySQL installed.
+<br>
+    $ sudo apt-get install python3-dev
+    $ sudo apt-get install libmysqlclient-dev
+    $ sudo apt-get install zlib1g-dev
+    $ sudo pip3 install mysqlclient
+    ...
+    $ python3
+    >>> import MySQLdb
+    >>> MySQLdb.version_info
+    (2, 0, 3, 'final', 0)
+
+</details>
+
+<details>
+    <summary>
+        Install <code>SQLAlchemy</code> module version <code>1.4.x</code>
+    </summary>
+    $ sudo pip3 install SQLAlchemy
+    ...
+    $ python3
+    >>> import sqlalchemy
+    >>> sqlalchemy.__version__
+    '1.4.22'
+
+</details>
+
+Ignore this warning message if you get it:
+
+    /usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/default.py:552: Warning: (1681, "'@@SESSION.GTID_EXECUTED' is deprecated and will be re
+    moved in a future release.")
+      cursor.execute(statement, parameters)
+
+----
+
+<details>
+    <summary>
         To run the example test operations on your terminal within the container
     </summary>
     run
