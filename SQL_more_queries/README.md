@@ -105,4 +105,4 @@ changing permissions syntax
 
 **testing**
 
-`cat 3-force_name.sql | mysql -hlocalhost -uroot -p hbtn_0d_2;echo 'INSERT INTO force_name (id, name) VALUES (89, "Best School");' | echo 'INSERT INTO force_name (id, name) VALUES (89, "Best School2");' | mysql -hlocalhost -uroot -p hbtn_0d_2;echo 'SELECT * FROM force_name;' | mysql -hlocalhost -uroot -p hbtn_0d_2`
+`cat 3-force_name.sql | mysql -hlocalhost -uroot -p hbtn_0d_2;echo 'INSERT INTO force_name (id, name) VALUES (89, "Best School");' | mysql -hlocalhost -uroot -p hbtn_0d_2;echo 'INSERT INTO force_name (id, name) VALUES (89, "Best School2");' | mysql -hlocalhost -uroot -p hbtn_0d_2;echo 'SELECT * FROM force_name;' | mysql -hlocalhost -uroot -p hbtn_0d_2`
