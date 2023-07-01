@@ -141,9 +141,14 @@ Example insert:
         cur.execute("INSERT INTO song (title) VALUES (%s)", song)
         print "Auto Increment ID: %s" % cur.lastrowid
 
-Cleanup
-
+Cleanup - do this within the python file when you are done with the cursor and database
+```
     # Close all cursors
     cur.close()
     # Close all databases
     db.close()
+```
+
+**testing**
+
+`cat tests/0-select_states.sql | mysql -uroot -p;./0-select_states.py root root hbtn_0e_0_usa`

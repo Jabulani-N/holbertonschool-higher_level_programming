@@ -16,6 +16,14 @@ def list_all_states ():
 
     cur.execute("SELECT id, name FROM states ORDER BY id;")
 
+    rows = cur.fetchall()
+    for row in rows:
+        print(row)
+
+    # Close all cursors
+    cur.close()
+    # Close all databases
+    db.close()
 
 if __name__ == '__main__':
     list_all_states()
