@@ -106,3 +106,9 @@ changing permissions syntax
 **testing**
 
 `cat 3-force_name.sql | mysql -hlocalhost -uroot -p hbtn_0d_2;echo 'INSERT INTO force_name (id, name) VALUES (89, "Best School");' | mysql -hlocalhost -uroot -p hbtn_0d_2;echo 'INSERT INTO force_name (id, name) VALUES (89, "Best School2");' | mysql -hlocalhost -uroot -p hbtn_0d_2;echo 'SELECT * FROM force_name;' | mysql -hlocalhost -uroot -p hbtn_0d_2`
+
+## Task4
+
+**testing**\
+
+`cat 4-never_empty.sql | mysql -hlocalhost -uroot -p hbtn_0d_2;echo 'INSERT INTO id_not_null (id, name) VALUES (89, "Best School");' | mysql -hlocalhost -uroot -p hbtn_0d_2;echo 'INSERT INTO id_not_null (name) VALUES ("Best");' | mysql -hlocalhost -uroot -p hbtn_0d_2;echo 'SELECT * FROM id_not_null;' | mysql -hlocalhost -uroot -p hbtn_0d_2;`
