@@ -16,7 +16,7 @@ $ sudo apt-get install -y nodejs
 
 `$ sudo npm install semistandard --global`
 
-semistandard is a linter with excellent functionality
+[semistandard](https://www.npmjs.com/package/semistandard) is a linter with excellent functionality
 
 * `semistandard fileName` will have seminstandard judge fileName for coding style.
 
@@ -29,3 +29,9 @@ semistandard is a linter with excellent functionality
 Testing: `./0-javascript_is_amazing.js`
 
 * a successful test will pring the line “JavaScript is amazing”
+
+## Task1
+
+Testing: `./1-multi_languages.js`
+
+* a successful test will pring 3 lines of text
