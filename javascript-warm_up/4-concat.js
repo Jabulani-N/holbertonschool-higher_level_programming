@@ -1,11 +1,16 @@
 #!/usr/bin/node
-const args = require('process').argv;
-/*
-require('process').argv returns an array
-[javascript location (shebang), called function/file, user arguments]
-*/
-if (typeof args[2] === 'undefined') {
-  console.log('No argument');
-} else {
-  console.log(args[2]);
+// this code is intentionally inefficnet,
+//for the sake of creating examples to reference
+const argv = require('process').argv;
+let first = 'undefined'
+let second = 'undefined'
+
+if (typeof argv[2] != 'undefined'){
+  first = argv[2];
 }
+if (typeof argv[3] != 'undefined'){
+  second = argv[3];
+}
+const finalAnswer = first.concat(' is ',second )
+
+  console.log(finalAnswer);
