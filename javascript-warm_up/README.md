@@ -39,3 +39,10 @@ Testing: `./0-javascript_is_amazing.js`
 Testing: `./1-multi_languages.js`
 
 * a successful test will pring 3 lines of text
+
+## Task2,3
+
+`require('process').argv` returns an array: `[javascript location (shebang), called function/file, user arguments]`. make a `const` equal to it to clenaly make use of it.
+
+* `"this will be counted as a single agument because of the quotes"`
+
