@@ -46,3 +46,15 @@ Testing: `./1-multi_languages.js`
 
 * `"this will be counted as a single agument because of the quotes"`
 
+## Task4
+
+```
+
+const str1 = "example string"
+
+const str2 = str1.concat('example of string', 'to tag onto' the guy before the dot.')
+
+```
+
+* string is immutable, so note that this returns a new string to str2, without altering str1
+
