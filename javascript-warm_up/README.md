@@ -58,3 +58,16 @@ const str2 = str1.concat('example of string', 'to tag onto' the guy before the d
 
 * string is immutable, so note that this returns a new string to str2, without altering str1
 
+## Task5
+
+[NaN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN) is a property that means "not a number"
+
+```
+
+if (isNaN(variableInQuestion)) {
+
+    //do stuff here
+
+}
+
+```
