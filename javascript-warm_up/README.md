@@ -60,7 +60,9 @@ const str2 = str1.concat('example of string', 'to tag onto' the guy before the d
 
 ## Task5
 
-[NaN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN) is a property that means "not a number"
+[NaN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN) is a property that means "not a number". `isNaN(varibale)` will tell you if varaible is a _not_ a number. it will parseint first, as necessary.
+
+[parseint(varibale)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt) converts `variable` into it's int equivalent if possible, such as turning `"eighty nine"` into `89`.
 
 ```
 
