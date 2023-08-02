@@ -132,3 +132,16 @@ console.log(x
 * `void(arg)` evaluates `arg` and returns nothing (undefined).
 
 * Therefore, `void(0)` is effectiely idential to Python's "pass"
+
+### Objects: Dictionaries
+
+dictionaries are called "objects" in Javascript.
+
+```
+
+const obj1 = {key1: 'value1', key2: value2IsAVariableIDeclaredEarlier, ...}
+
+```
+
+in the above, keys will always be interpreted as string, denying the opportunity to be varaibles or numeric literals. Values can be any type.
+
