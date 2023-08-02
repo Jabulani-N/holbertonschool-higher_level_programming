@@ -163,4 +163,7 @@ console.log(test.func());
 
 // Expected output: Object {prop:42, func: function() {return this;} }
 
- ```
+```
+
+* as you can see, `this` behaves like "self" in python, returning the difinition of the object in question.
+
