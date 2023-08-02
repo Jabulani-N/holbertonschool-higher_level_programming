@@ -145,3 +145,22 @@ const obj1 = {key1: 'value1', key2: value2IsAVariableIDeclaredEarlier, ...}
 
 in the above, keys will always be interpreted as string, denying the opportunity to be varaibles or numeric literals. Values can be any type.
 
+```
+
+const test = {
+
+  prop: 42,
+
+  func: function () {
+
+    return this;
+
+  },
+
+};
+
+console.log(test.func());
+
+// Expected output: Object {prop:42, func: function() {return this;} }
+
+ ```
