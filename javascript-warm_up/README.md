@@ -167,3 +167,30 @@ console.log(test.func());
 
 * as you can see, `this` behaves much like "self" in python, returning the difinition of the object in question.
 
+### [New](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new)
+
+new calls things as constructors. Even functions.
+
+```
+
+function Car(make, model, year) {
+
+  this.make = make;
+
+  this.model = model;
+
+  this.year = year;
+
+}
+
+const car1 = new Car('Eagle', 'Talon TSi', 1993);
+
+console.log(car1.make);
+
+// Expected output: "Eagle"
+
+```
+
+
+The above code has constructed an object with attributes based on a function.
+
