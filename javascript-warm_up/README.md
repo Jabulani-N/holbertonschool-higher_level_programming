@@ -73,3 +73,13 @@ if (isNaN(variableInQuestion)) {
 }
 
 ```
+
+## Task9
+
+```
+function functionName (arg1, arg2, ...) {
+  // do stuff
+}
+```
+
+you can put this in your script, and then call `functionName` from anywhere
