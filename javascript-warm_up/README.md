@@ -165,5 +165,5 @@ console.log(test.func());
 
 ```
 
-* as you can see, `this` behaves like "self" in python, returning the difinition of the object in question.
+* as you can see, `this` behaves much like "self" in python, returning the difinition of the object in question.
 
