@@ -1,5 +1,6 @@
 #!/usr/bin/node
-class Rectangle {
-}
-
-module.exports = Rectangle;
+exports.converter = function (base) {
+  return function converToBaseN (num) {
+    return (num.toString(base));
+  };
+};

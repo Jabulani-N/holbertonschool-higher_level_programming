@@ -1,5 +1,6 @@
 #!/usr/bin/node
-class Rectangle {
-}
-
-module.exports = Rectangle;
+let counter = 0;
+exports.logMe = function (item) {
+  console.log(counter + ': ' + item);
+  counter++;
+};
