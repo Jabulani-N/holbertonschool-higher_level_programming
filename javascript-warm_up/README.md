@@ -85,3 +85,36 @@ function functionName (arg1, arg2, ...) {
 ```
 
 you can put this in your script, and then call `functionName` from anywhere
+
+## Additional Notes:
+
+### The difference between `const`, `let`, and `var`
+
+`var` creates a globally scoped variable. if you do somehting within a block, for example, an `if (condition) {block of code}`, if you use the same variable name inside and outside of that block, each usage will affect the same variable.
+
+`let` is block scoped.
+
+```
+
+let x = "first"
+
+
+if (condition) {
+
+  let x = "second"
+
+  console.log(x)
+
+  // prints "second"
+
+}
+
+console.log(x
+
+//prints "first"
+
+)
+
+```
+
+`const` is
