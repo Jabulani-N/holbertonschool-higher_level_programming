@@ -125,3 +125,10 @@ console.log(x
 
 * similar to pointing in C, altering the content of a list is not considered altering the list itself.
 
+### Void(0)
+
+`void(0)` does nothing.
+
+* `void(arg)` evaluates `arg` and returns nothing (undefined).
+
+* Therefore, `void(0)` is effectiely idential to Python's "pass"
