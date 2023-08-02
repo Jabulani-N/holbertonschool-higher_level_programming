@@ -79,9 +79,13 @@ if (isNaN(variableInQuestion)) {
 ## Task9
 
 ```
+
 function functionName (arg1, arg2, ...) {
+
   // do stuff
+
 }
+
 ```
 
 you can put this in your script, and then call `functionName` from anywhere
@@ -117,4 +121,7 @@ console.log(x
 
 ```
 
-`const` is
+`const` is a let that cannot have it's contents changed.
+
+* similar to pointing in C, altering the content of a list is not considered altering the list itself.
+
