@@ -6,6 +6,8 @@
 
 * [Javascript Basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics)
 
+* [Javascript Data Structures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
+
 ## Install Node 14
 
 ```
