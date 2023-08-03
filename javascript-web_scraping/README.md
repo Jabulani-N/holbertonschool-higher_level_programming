@@ -28,3 +28,16 @@
 2. `export NODE_PATH=/usr/lib/node_modules`
 
 
+## Task0
+
+[readfile](https://nodejs.org/api/fs.html#filehandlereadfileoptions)
+
+[more advanced readfile that utilizes a filepicker window](https://developer.mozilla.org/en-US/docs/Web/API/FileSystemFileHandle)
+
+Write a script that reads and prints the content of a file.
+
+* The first argument is the file path
+
+* The content of the file must be read in utf-8
+
+* If an error occurred during the reading, print the error object
