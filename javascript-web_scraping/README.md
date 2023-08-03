@@ -49,7 +49,7 @@ Write a script that reads and prints the content of a file.
 
 <details>
     <summary>
-        Explanation according to you.com
+        Explanation of my readFile line in task0, according to you.com
     </summary>
 
 The readFile() method uses a callback function to handle the results of the file read operation. This callback function takes two arguments: error and content.
