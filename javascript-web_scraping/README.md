@@ -45,3 +45,17 @@ Write a script that reads and prints the content of a file.
 * The content of the file must be read in utf-8
 
 * If an error occurred during the reading, print the error object
+
+
+<details>
+    <summary>
+        Explanation according to you.com
+    </summary>
+
+The readFile() method uses a callback function to handle the results of the file read operation. This callback function takes two arguments: error and content.
+
+If an error occurs during the read operation, the error parameter will contain information about the error. If no error occurs, the content parameter will contain the contents of the file.
+
+The callback function uses the logical OR (||) operator to log either the value of error or content to the console.
+
+</details>
