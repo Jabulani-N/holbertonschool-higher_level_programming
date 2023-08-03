@@ -6,7 +6,7 @@ require('process').argv returns an array
 [javascript location (shebang), called function/file, user arguments]
 */
 const fs = require('fs');
-// this 'fs' seems to be shorthand for "filesystem"
+// this 'fs' seems to stand for "filesystem"
 
 fs.readFile(args[2], 'utf-8', function (error, content) {
   console.log(error || content);
