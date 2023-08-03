@@ -11,7 +11,7 @@ const fs = require('fs');
 const fileName = args[2];
 const getsWritten = args[3];
 
-fs.writefile(fileName, getsWritten, 'utf-8', (err) => {
+fs.writeFile(fileName, getsWritten, 'utf-8', (err) => {
   if (err) throw err;
 }
 );
