@@ -28,9 +28,13 @@
 2. `export NODE_PATH=/usr/lib/node_modules`
 
 
-## Task0
+## Task0,1
 
 [readfile](https://nodejs.org/api/fs.html#filehandlereadfileoptions)
+
+[writefile with callback](https://nodejs.org/api/fs.html#fswritefilefile-data-options-callback)
+
+* this one shows that you are expected/permitted to provide a funciton that runs when reveiving an error.
 
 [more advanced readfile that utilizes a filepicker window](https://developer.mozilla.org/en-US/docs/Web/API/FileSystemFileHandle)
 

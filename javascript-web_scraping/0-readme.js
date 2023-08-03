@@ -12,4 +12,4 @@ fs.readFile(args[2], 'utf-8', function (error, content) {
   console.log(error || content);
 }
 );
-// translates to fs.readFile(file_to_read, 'formatting', ???)
+// translates to fs.readFile(file_to_read, 'formatting', function that runs on error, or on content reception)
