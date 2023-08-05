@@ -92,3 +92,24 @@ when you request from the SWAPI, the body of the response you'll receive is a JS
 
 * * response has other properties, such as `reponse.statusCode`, that we do not need for this particular task.
 
+<details>
+    <summary>
+    Steps I took to figure out how I'd use `response`'s data
+    </sumamry>
+    ```
+        console.log('body: ' + response.body);
+
+    console.log('type: ' + typeof response.body)
+    ```
+
+    This gave me string, letting me know I needed to convert it to dictoinary (object)
+
+    ```
+
+    const objectified = JSON.parse(response.body);
+
+    console.log('type of objectified: ' + typeof objectified)
+
+    ```
+    I've recorded this just to haev an easy potential train of thought to default to in thte future
+</details>
