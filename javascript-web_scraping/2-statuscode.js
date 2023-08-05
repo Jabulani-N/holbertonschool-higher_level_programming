@@ -10,6 +10,10 @@ const urlToRequest = args[2];
 const request = require('request');
 
 request.get(urlToRequest, function (error, response) {
-  console.log(error || 'code: ' + response);
+  if (error) {
+    console.log(error.message);
+  } else {
+    console.log(response.statusCode);
+  }
 }
 );
