@@ -65,7 +65,7 @@ The callback function uses the logical OR (||) operator to log either the value 
 
 ## task2
 
-Be sure to install request before attempting this task.
+**Be sure to install request before attempting this task.**
 
 ```
 
@@ -79,4 +79,16 @@ request(target_url, callback_function_to_handle_errors_and_recieve_response(erro
 * `response` will contain a statusCode: `response.statsCode`
 
 Currently, it seems that even if the item does not exist, it gives a proper 404 statusCode instead of an error. As such, I do not know what case would cause an error in this code.
+
+## Task3
+
+[full list of reponse attributes](https://developer.mozilla.org/en-US/docs/Web/API/Response)
+
+### Converting response (string) to object (dictionary)
+
+when you request from the SWAPI, the body of the response you'll receive is a JSON string object. it's a perfecetly formatted dictionary, just in string form. conert it to a dictoinary.
+
+* the interesting content from the api call will be within `response.body`
+
+* * response has other properties, such as `reponse.statusCode`, that we do not need for this particular task.
 
