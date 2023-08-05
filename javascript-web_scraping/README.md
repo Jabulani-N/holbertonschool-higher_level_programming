@@ -59,3 +59,14 @@ If an error occurs during the read operation, the error parameter will contain i
 The callback function uses the logical OR (||) operator to log either the value of error or content to the console.
 
 </details>
+
+## task2
+
+```
+
+request = require('request')
+
+request(target_url, callback_function_to_handle_errors)
+
+```
+
