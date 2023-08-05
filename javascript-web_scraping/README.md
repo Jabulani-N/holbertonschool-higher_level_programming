@@ -62,11 +62,15 @@ The callback function uses the logical OR (||) operator to log either the value 
 
 ## task2
 
+Be sure to install request before attempting this task.
+
 ```
 
 request = require('request')
 
-request(target_url, callback_function_to_handle_errors)
+request(target_url, callback_function_to_handle_errors_and_recieve_response(error, response))
 
 ```
+* `error` will contain an error message: `error.message`
 
+* `response` will contain a statusCode: `response.statsCode`
