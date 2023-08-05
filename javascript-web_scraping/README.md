@@ -113,3 +113,6 @@ when you request from the SWAPI, the body of the response you'll receive is a JS
     ```
     I've recorded this just to haev an easy potential train of thought to default to in thte future
 </details>
+
+semistandard will prefer `exampleDict.exampleAttr` over `exampleDict['exampleAttr]`
+
