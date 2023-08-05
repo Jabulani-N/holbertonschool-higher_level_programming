@@ -13,5 +13,3 @@ request.get(urlToRequest, function (error, response) {
   console.log(error || 'code: ' + response);
 }
 );
-// translates to
-// fs.writeFile(file_to_write_to, content to write to file_to_write_to , 'formatting', callback arrow function that is called upon error)
