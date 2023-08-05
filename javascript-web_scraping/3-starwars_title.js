@@ -13,7 +13,11 @@ request.get(urlToRequest, function (error, response) {
   if (error) {
     console.log(error.message);
   } else {
-    console.log('code: ' + response.statusCode);
+    console.log('body: ' + response.body);
+    console.log('type: ' + typeof response.body)
+    const objectified = JSON.parse(response.body);
+    console.log('type of objectified: ' + typeof objectified)
+    console.log("objectified: " + objectified["title"])
   }
 }
 );
