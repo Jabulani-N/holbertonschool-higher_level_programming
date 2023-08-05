@@ -74,3 +74,6 @@ request(target_url, callback_function_to_handle_errors_and_recieve_response(erro
 * `error` will contain an error message: `error.message`
 
 * `response` will contain a statusCode: `response.statsCode`
+
+Currently, it seems that even if the item does not exist, it gives a proper 404 statusCode instead of an error. As such, I do not know what case would cause an error in this code.
+

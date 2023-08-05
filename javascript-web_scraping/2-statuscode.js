@@ -13,7 +13,7 @@ request.get(urlToRequest, function (error, response) {
   if (error) {
     console.log(error.message);
   } else {
-    console.log(response.statusCode);
+    console.log('code: ' + response.statusCode);
   }
 }
 );
