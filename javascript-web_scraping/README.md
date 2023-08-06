@@ -84,6 +84,8 @@ Currently, it seems that even if the item does not exist, it gives a proper 404 
 
 [full list of reponse attributes](https://developer.mozilla.org/en-US/docs/Web/API/Response)
 
+[this is the database we request from](https://swapi-api.hbtn.io/documentation#vehicles
+)
 ### Converting response (string) to object (dictionary)
 
 when you request from the SWAPI, the body of the response you'll receive is a JSON string object. it's a perfecetly formatted dictionary, just in string form. conert it to a dictoinary.
