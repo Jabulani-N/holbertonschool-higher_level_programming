@@ -20,7 +20,7 @@ request.get(listOfFilms, function (error, response) {
     for (const filmObject of objectified.results) {
       for (const characterURL of filmObject.characters) {
         // console.log(characterURL)
-        if (characterURL == 'https://swapi-api.hbtn.io/api/people/18/') {
+        if (characterURL === 'https://swapi-api.hbtn.io/api/people/18/') {
           timesFeatured++;
         }
       }
