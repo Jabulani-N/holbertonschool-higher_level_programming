@@ -68,11 +68,8 @@ The callback function uses the logical OR (`||`) operator to log either the valu
 **Be sure to install request before attempting this task.**
 
 ```
-
 request = require('request')
-
 request(target_url, callback_function_to_handle_errors_and_recieve_response(error, response))
-
 ```
 * `error` will contain an error message: `error.message`
 
@@ -98,21 +95,21 @@ when you request from the SWAPI, the body of the response you'll receive is a JS
     <summary>
     Steps I took to figure out how I'd use `response`'s data
     </sumamry>
-    ```
-        console.log('body: ' + response.body);
+```
+console.log('body: ' + response.body);
 
-    console.log('type: ' + typeof response.body)
-    ```
+console.log('type: ' + typeof response.body)
+```
 
-    This gave me string, letting me know I needed to convert it to dictoinary (object)
+This gave me string, letting me know I needed to convert it to dictoinary (object)
 
-    ```
+```
 
-    const objectified = JSON.parse(response.body);
+const objectified = JSON.parse(response.body);
 
-    console.log('type of objectified: ' + typeof objectified)
+console.log('type of objectified: ' + typeof objectified)
 
-    ```
+```
 I've recorded this just to have an easy potential train of thought to default to in thte future
 </details>
 
