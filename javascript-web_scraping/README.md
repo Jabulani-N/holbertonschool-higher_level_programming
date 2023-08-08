@@ -123,3 +123,6 @@ we have to use  a preset url that pulls the entire films list.
 2. each film object has a characters attribute. that will contain a list of urls specific to a particular character.
 3. we can count this by counting how many entries in that list of urls contains a link to character 18: `https://swapi-api.hbtn.io/api/people/18/`.
 4. iterate through the list of film objects' character attributes, adding up to find the total.
+
+[Includes: `exampleString.includes('string to check for)`](https://www.w3schools.com/Jsref/jsref_includes.asp)
+
