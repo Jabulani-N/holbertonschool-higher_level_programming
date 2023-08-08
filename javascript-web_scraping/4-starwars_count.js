@@ -9,12 +9,13 @@ const listOfFilms = args[2];
 
 const request = require('request');
 
-request.get(urlToRequest, function (error, response) {
+request.get(listOfFilms, function (error, response) {
   if (error) {
     console.log(error.message);
   } else {
+    // we received the list of films
     const objectified = JSON.parse(response.body);
-    console.log(objectified.title);
+    console.log(objectified.results);
   }
 }
 );
