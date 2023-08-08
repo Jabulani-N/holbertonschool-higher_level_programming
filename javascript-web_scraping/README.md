@@ -117,9 +117,9 @@ semistandard will prefer `exampleDict.exampleAttr` over `exampleDict['exampleAtt
 
 ~~each person has a films attribute, which contains a list of film objects. count the length of the list, and you have how many films a char is in.~~
 
-we have to use  a preset url that pulls the entire films object.
+we have to use  a preset url that pulls the entire films list.
 
-1. that object will be a list of films objects. probably.
-1. each film object has a characters attribute. that will contain a list of urls specific to a particular character.
-1. we can count this by counting how many entries in that list of urls contains a link to character 18: `https://swapi-api.hbtn.io/api/people/1/`.
-2. iterate through the list of film objects' character attributes, adding up to find the total.
+1. This `response.body.results` is a list of films objects.
+2. each film object has a characters attribute. that will contain a list of urls specific to a particular character.
+3. we can count this by counting how many entries in that list of urls contains a link to character 18: `https://swapi-api.hbtn.io/api/people/1/`.
+4. iterate through the list of film objects' character attributes, adding up to find the total.
