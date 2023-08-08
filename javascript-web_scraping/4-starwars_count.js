@@ -5,7 +5,7 @@ const args = require('process').argv;
 require('process').argv returns an array:
 [javascript location (shebang), called function/file, user arguments]
 */
-const urlToRequest = 'https://swapi-api.hbtn.io/api/films/' + args[2] + '/';
+const listOfFilms = args[2];
 
 const request = require('request');
 
