@@ -93,8 +93,9 @@ when you request from the SWAPI, the body of the response you'll receive is a JS
 
 <details>
     <summary>
-    Steps I took to figure out how I'd use `response`'s data
+    Steps I took to figure out how I'd use `response` data
     </sumamry>
+
 ```
 console.log('body: ' + response.body);
 console.log('type: ' + typeof response.body)
