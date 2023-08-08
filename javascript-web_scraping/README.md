@@ -59,7 +59,7 @@ The readFile() method uses a callback function to handle the results of the file
 
 If an error occurs during the read operation, the error parameter will contain information about the error. If no error occurs, the content parameter will contain the contents of the file.
 
-The callback function uses the logical OR (||) operator to log either the value of error or content to the console.
+The callback function uses the logical OR (`||`) operator to log either the value of error or content to the console.
 
 </details>
 
@@ -113,8 +113,12 @@ when you request from the SWAPI, the body of the response you'll receive is a JS
     console.log('type of objectified: ' + typeof objectified)
 
     ```
-    I've recorded this just to haev an easy potential train of thought to default to in thte future
+I've recorded this just to have an easy potential train of thought to default to in thte future
 </details>
 
 semistandard will prefer `exampleDict.exampleAttr` over `exampleDict['exampleAttr]`
+
+## Task4
+
+each person has a films attribute, which contains a list of film objects. count the length of hte list, and you have how many films a char is in.
 
