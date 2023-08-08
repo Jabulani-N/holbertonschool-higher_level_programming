@@ -97,25 +97,22 @@ when you request from the SWAPI, the body of the response you'll receive is a JS
     </sumamry>
 ```
 console.log('body: ' + response.body);
-
 console.log('type: ' + typeof response.body)
 ```
 
 This gave me string, letting me know I needed to convert it to dictoinary (object)
 
 ```
-
 const objectified = JSON.parse(response.body);
-
 console.log('type of objectified: ' + typeof objectified)
-
 ```
 I've recorded this just to have an easy potential train of thought to default to in thte future
+
 </details>
 
 semistandard will prefer `exampleDict.exampleAttr` over `exampleDict['exampleAttr]`
 
 ## Task4
 
-each person has a films attribute, which contains a list of film objects. count the length of hte list, and you have how many films a char is in.
+each person has a films attribute, which contains a list of film objects. count the length of the list, and you have how many films a char is in.
 
