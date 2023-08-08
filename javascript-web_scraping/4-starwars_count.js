@@ -8,7 +8,7 @@ require('process').argv returns an array:
 const listOfFilms = args[2];
 
 const request = require('request');
-let timesFeatured = 0
+let timesFeatured = 0;
 request.get(listOfFilms, function (error, response) {
   if (error) {
     console.log(error.message);
@@ -21,11 +21,11 @@ request.get(listOfFilms, function (error, response) {
       for (const characterURL of filmObject.characters) {
         // console.log(characterURL)
         if (characterURL == 'https://swapi-api.hbtn.io/api/people/18/') {
-            timesFeatured++;
+          timesFeatured++;
         }
       }
     }
-    console.log(timesFeatured.toString())
+    console.log(timesFeatured.toString());
   }
 }
 );
