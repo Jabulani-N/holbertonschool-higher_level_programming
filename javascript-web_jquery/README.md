@@ -9,7 +9,7 @@
 * including the script (not the head. the script can located in he body, preferably after all the text) impotrs jQuery, allowing it to be utiliezed in other sccripts.
 
 * it is usually best to include scripts at the end of the html file, after the rest of the page has loaded. This way, no script will attempt to use assets before they exist.
-
+	
 ## Task0
 
 Write a JavaScript script that updates the text color of the <header> element to red (#FF0000):
