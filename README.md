@@ -1,6 +1,6 @@
-# Higher-level programming:
+# Higher-level programming
 
-holbrton  repo for higher level programming
+holbrton School repo for higher level programming
 
 Includes:
 
