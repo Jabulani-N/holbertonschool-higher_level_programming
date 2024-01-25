@@ -1,4 +1,4 @@
 #!/bin/bash
 
-#gives user execution permissions to all .py files in current directory
+#gives user execution permissions to all main.py files in current directory
 chmod -v u+x *main.py
